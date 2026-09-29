@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dynamic Menu</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="menu-wrapper" id="menuWrapper">
+		<div class="menu-container" id="menuContainer">
+			<div class="menu-header">
+				<div class="header-content">
+				<div class="header-icon">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.5" fill="none"/>
+						<rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.5" fill="none"/>
+						<rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="1.5" fill="none"/>
+						<rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="1.5" fill="none"/>
+					</svg>
+				</div>
+					<div class="header-title">Menu Dinâmico</div>
+				</div>
+				<div class="header-line"></div>
+			</div>
+			
+			<div class="menu-content" id="menuContent">
+				<!-- Botões serão inseridos aqui dinamicamente -->
+			</div>
+			
+			<div class="menu-footer">
+				<div class="footer-hint">
+					<span class="hint-icon">ESC</span>
+					<span class="hint-text">Fechar menu</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Identity overlay -->
+	<div class="identity-wrapper" id="identityWrapper">
+		<div class="identity-card" id="identityCard">
+			<div class="identity-title" id="identityTitle">RG Nacional</div>
+			<div class="identity-sep"></div>
+			<div class="identity-field">
+				<span class="field-label">Nome:</span>
+				<span class="field-value" id="identityName"></span>
+			</div>
+			<div class="identity-field">
+				<span class="field-label">Passaporte:</span>
+				<span class="field-value" id="identityId"></span>
+			</div>
+			<div class="identity-field hidden" id="identityRegRow">
+				<span class="field-label">Registro:</span>
+				<span class="field-value" id="identityReg"></span>
+			</div>
+			<div class="identity-field hidden" id="identityPhoneRow">
+				<span class="field-label">Telefone:</span>
+				<span class="field-value" id="identityPhone"></span>
+			</div>
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>

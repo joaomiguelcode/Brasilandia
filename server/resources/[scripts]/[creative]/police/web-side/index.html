@@ -1,0 +1,305 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>#bahamas</title>
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com/; connect-src *; script-src 'self' 'unsafe-inline'; img-src * data:; style-src * 'unsafe-inline'; frame-src 'self' https://docs.google.com/"/>
+		<script src="vendor/jquery-3.6.0.js"></script>
+		<script src="vendor/jquery-ui.min.js"></script>
+		<link href="css.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="ckeditor.js"></script>
+	</head>
+	<body>
+		<div id="mainPage">
+			<div id="mainMenu">
+				<img src="./images/logo.png" style="padding-left: 0.4rem;padding-top: 0.4rem;"/>
+				<ul class="nav">
+					<li class="active">
+						<a onclick="functionPrender();document.getElementById('header').style.display='block'">
+							<p>PRENDER</p>
+						</a>
+					</li>
+					<li>
+						<a onclick="functionMultar();document.getElementById('header').style.display='block'">
+							<p>MULTAR</p>
+						</a>
+					</li>
+					<li>
+						<a onclick="functionProcurados();document.getElementById('header').style.display='block'">
+							<p>Procurados</p>
+						</a>
+					</li>
+					<li>
+						<a onclick="functionPortes();document.getElementById('header').style.display='block'">
+							<p>Portes</p>
+						</a>
+					</li>
+					
+					<li>
+						<a onclick="functionBoletins();document.getElementById('header').style.display='block'">
+							<p>BOLETINS</p>
+						</a>
+					</li>
+					<li>
+						<a onclick="displayGoogleDoc('10rFR2QZZrb2N_xbMKrXhjN6swx45mKHgCdUuSofvjpA');document.getElementById('header').style.display = 'none'">
+							<p>Regimento Interno</p>
+						</a>
+					</li>
+					<li>
+						<a onclick="displayGoogleDoc('10OF7jWQcJbVk6CsXKqWWx-XS0Yn2tXGJ6XXBUzYHLc4');document.getElementById('header').style.display = 'none'">
+							<p>Código Penal</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="header">
+				<button class="buttonSearch">Buscar</button>
+				<input class="inputSearch" id="searchPassaporte" type="number"
+				       onKeyPress="if(this.value.length==5) return false;" value="" placeholder="Buscar."/>
+			</div>
+			<div id="content">
+			</div>
+			<input class="modal-state" id="modal-1" type="checkbox"/>
+			<div class="modal">
+				<label class="modal__bg" for="modal-1"></label>
+				<div class="modal__inner">
+					<label class="modal__close" for="modal-1"></label>
+					<h2>Código Penal</h2>
+					<div class="crimesleft" id="modalLeft">
+						<h3 class="colorH3">INFRAÇÕES:</h3>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="ALTA VELOCIDADE|2000|0"
+							       onclick="calcular()">ALTA VELOCIDADE
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="DIREÇÃO PERIGOSA|4000|0"
+							       onclick="calcular()">DIREÇÃO PERIGOSA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]"
+							       value="ESTACIONAR EM LOCAL PROIBIDO|2000|0" onclick="calcular()">ESTACIONAR EM LOCAL
+							PROIBIDO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]"
+							       value="POUSAR EM LOCAL PROÍBIDO OU SEM DESIGNAÇÃO|30000|0" onclick="calcular()">POUSAR EM
+							LOCAL PROÍBIDO OU SEM DESIGNAÇÃO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="MANOBRA IMPRUDENTE COM AERONAVE|50000|0" onclick="calcular()">MANOBRA IMPRUDENTE COM AERONAVE
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="VEÍCULO ABANDONADO|1500|0" onclick="calcular()">VEÍCULO ABANDONADO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="TRAFEGAR NA CONTRA MÃO|2000|0" onclick="calcular()">TRAFEGAR NA CONTRA MÃO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="DANO A PATRIMONIO|2000|5" onclick="calcular()">DANO A PATRIMONIO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="VEÍCULO DANIFICADO|2000|0" onclick="calcular()">VEÍCULO DANIFICADO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="BLOQUEAR OU DANIFICAR VTR|10000|10" onclick="calcular()">BLOQUEAR OU DANIFICAR VTR
+						</p>
+						<h3 class="colorH3">AÇÕES FECHADAS</h3>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="BARBEARIA|1500|30"
+							       onclick="calcular()">BARBEARIA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="LOJA DE ARMAS|2000|40"
+							       onclick="calcular()">LOJA DE ARMAS
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="LOJA DE DEPARTAMENTO|2500|65"
+							       onclick="calcular()">LOJA DE DEPARTAMENTO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]"
+							       value="BANCO CENTRAL COM REFÉM SEM FUGA|8000|115" onclick="calcular()">BANCO CENTRAL COM
+							REFÉM SEM FUGA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]"
+							       value="BANCO CENTRAL COM REFÉM E FUGA|8000|105" onclick="calcular()">BANCO CENTRAL COM REFÉM
+							E FUGA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="BANCO CENTRAL SEM REFÉM|4000|95"
+							       onclick="calcular()">BANCO CENTRAL SEM REFÉM
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="BANCO DE PALETO|6000|95"
+							       onclick="calcular()">BANCO DE PALETO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]"
+							       value="BANCO FLEECA COM REFÉM SEM FUGA|8000|115" onclick="calcular()">BANCO FLEECA COM REFÉM
+							SEM FUGA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]"
+							       value="BANCO FLEECA COM REFÉM E FUGA|8000|105" onclick="calcular()">BANCO FLEECA COM REFÉM E
+							FUGA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="BANCO FLEECA SEM REFÉM|4000|95"
+							       onclick="calcular()">BANCO FLEECA SEM REFÉM
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="CARRO FORTE|4000|95"
+							       onclick="calcular()">CARRO FORTE
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="NIÓBIO|8000|95"
+							       onclick="calcular()">NIÓBIO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="JOALHERIA|6000|75"
+							       onclick="calcular()">JOALHERIA
+						</p>
+					</div>
+					<div class="crimesright" id="modalRight">
+						<h3 class="colorH3">CRIMES:</h3>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="AMEAÇA|1000|10"
+							       onclick="calcular()">AMEAÇA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="ROUBO|2000|30"
+							       onclick="calcular()">ROUBO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="ROUBO A VTR|20000|500"
+							       onclick="calcular()">ROUBO A VTR
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="ASSOCIAÇÃO CRIMINOSA|1000|10"
+							       onclick="calcular()">ASSOCIAÇÃO CRIMINOSA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="CORRIDAS ILEGAIS|2000|20"
+							       onclick="calcular()">CORRIDAS ILEGAIS
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="DENÚNCIA CALUNIOSA|1000|10"
+							       onclick="calcular()">DENÚNCIA CALUNIOSA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="DESACATO|6000|30"
+							       onclick="calcular()">DESACATO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="DESOBEDIÊNCIA|2000|20"
+							       onclick="calcular()">DESOBEDIÊNCIA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="DOLARES ILÍCITOS|1000|20"
+							       onclick="calcular()">DOLARES ILÍCITOS
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="ESTELIONATO|2000|30"
+							       onclick="calcular()">ESTELIONATO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="FALSIDADE IDEOLÓGICA|2000|15"
+							       onclick="calcular()">FALSIDADE IDEOLÓGICA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="FALSO TESMUNHO|2000|10"
+							       onclick="calcular()">FALSO TESMUNHO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="FURTO|2000|15"
+							       onclick="calcular()">FURTO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="INVASÃO DE PROPRIEDADE|1000|20"
+							       onclick="calcular()">INVASÃO DE PROPRIEDADE
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]"
+							       value="INVASÃO DE PROPRIEDADE PUBLICA|10000|500" onclick="calcular()">INVASÃO DE PROPRIEDADE
+							PUBLICA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="LESÃO CORPORAL|1000|10"
+							       onclick="calcular()">LESÃO CORPORAL
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="MULTAS NÃO PAGAS|0|10"
+							       onclick="calcular()">MULTAS NÃO PAGAS
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="OBSTRUÇÃO DE JUSTIÇA|3500|20"
+							       onclick="calcular()">OBSTRUÇÃO DE JUSTIÇA
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="OCULTAÇÃO FACIAL|15000|15"
+							       onclick="calcular()">OCULTAÇÃO FACIAL
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]"
+							       value="PORTE/POSSE ILEGAL DE ARMAS - CLASS 1|1500|15" onclick="calcular()">PORTE/POSSE
+							ILEGAL DE ARMAS - CLASS 1
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]"
+							       value="PORTE/POSSE ILEGAL DE ARMAS - CLASS 2|2500|20" onclick="calcular()">PORTE/POSSE
+							ILEGAL DE ARMAS - CLASS 2
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="PRODUTOS ILÍCITOS|1000|15"
+							       onclick="calcular()">PRODUTOS ILÍCITOS
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="RECEPTAÇÃO|1500|20"
+							       onclick="calcular()">RECEPTAÇÃO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="ROUPAS POLICIAS|15000|0"
+							       onclick="calcular()">ROUPAS POLICIAS
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="SEQUESTRO|2500|20"
+							       onclick="calcular()">SEQUESTRO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="SUBORNO|5000|25"
+							       onclick="calcular()">SUBORNO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="TERRORISMO|25000|50"
+							       onclick="calcular()">TERRORISMO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="TRÁFICO DE DROGAS|1500|20"
+							       onclick="calcular()">TRÁFICO DE DROGAS
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="TRÁFICO DE MUNIÇÃO|1500|25"
+							       onclick="calcular()">TRÁFICO DE MUNIÇÃO
+						</p>
+						<p class="colorCrimes">
+							<input type="checkbox" name="crime[]" value="CAÇA ILEGAL|1500|25"
+							       onclick="calcular()">CAÇA ILEGAL
+						</p>
+					</div>
+					<div style="display: inline-block">
+						<input type="number" class="inputTentativasModal" id="drogas" name="drogas" value=""
+						       placeholder="Número de tentativas de homicídio" onchange="calcular()" size="4">
+						<input type="number" class="inputTentativasModal2" id="sujo" name="sujo" onchange="calcular()"
+						       value="" placeholder="Número de tentativas de homicídio a oficial" size="4">
+						<input type="number" class="inputTentativasModal" id="multas" name="multas" onchange="calcular()"
+						       value="" placeholder="Número de homicídio" size="4">
+						<input type="number" class="inputTentativasModal2" id="muniçao" name="muniçao" onchange="calcular()"
+						       value="" placeholder="Número de homicídio a oficial" size="4">
+					</div>
+				</div>
+			</div>
+			<script src="./jquery.js"></script>
+		</div>
+	</body>
+</html>

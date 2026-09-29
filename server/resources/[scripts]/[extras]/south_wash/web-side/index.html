@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="./style.css" />
+	<title>South Development</title>
+</head>
+<body>
+	<terminal id="terminal">
+		<div class="kali-terminal">
+			<div class="kali-terminal-header">
+			  <div class="kali-terminal-buttons">
+				<div class="kali-terminal-button kali-terminal-button-close"></div>
+				<div class="kali-terminal-button kali-terminal-button-minimize"></div>
+				<div class="kali-terminal-button kali-terminal-button-expand"></div>
+			  </div>
+			  <div class="kali-terminal-title">Kali Linux</div>
+			</div>
+			<div class="kali-terminal-content">
+				<span class="kali-prompt">$</span>
+				<span class="kali-command">cd /mnt/c && chmod +x script.sh && ./script.sh</span>
+			</div>
+			<div id="outputContainer"></div>
+	</terminal>
+</body>
+<script text="javascript" src="./javascript.js"></script>
+</html>

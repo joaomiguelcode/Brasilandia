@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PDM Concessionaria</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="app-container" style="display: none;">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Logo" onerror="this.style.display='none'">
+                <h1>PDM<span>SPORT</span></h1>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item active" onclick="openHome()" id="nav-home">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </div>
+                <div class="nav-item" onclick="openMyVehicles()" id="nav-myvehicles">
+                    <i class="fas fa-car-side"></i>
+                    <span>Meus Veículos</span>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="nav-item" onclick="closeMenu()">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Sair</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-info">
+                    <h2 id="current-page-title">Concessionária Oficial</h2>
+                    <p id="current-page-subtitle">Seja bem-vindo à melhor seleção de veículos</p>
+                </div>
+                <div class="header-actions">
+                    <div class="search-bar" id="search-container" style="display: none;">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Pesquisar veículos..."
+                            onkeyup="searchVehicle()">
+                    </div>
+                    <div class="close-action" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <!-- Home Page -->
+                <div id="page-home">
+                    <section class="hero-section">
+                        <div class="hero-content">
+                            <span class="badge" id="hero-class">CLASSE</span>
+                            <h1 id="hero-name">NOME DO VEÍCULO</h1>
+                            <div class="hero-details">
+                                <div class="price-tag">
+                                    <span class="label">A partir de</span>
+                                    <span class="value" id="hero-price">R$ 0,00</span>
+                                </div>
+                                <button class="btn-primary" id="hero-btn">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <img id="hero-img" src="" alt="Destaque">
+                        </div>
+                    </section>
+
+                    <section class="categories-section">
+                        <div class="section-header">
+                            <h3>Categorias</h3>
+                        </div>
+                        <div id="categories-container" class="categories-grid"></div>
+                    </section>
+
+                    <section class="featured-section">
+                        <div class="section-header">
+                            <h3>Destaques da Semana</h3>
+                        </div>
+                        <div id="home-cards-container" class="vehicles-grid"></div>
+                    </section>
+                </div>
+
+                <!-- Grid Page (Categories/My Vehicles) -->
+                <div id="page-grid" style="display: none;">
+                    <div id="grid-content" class="vehicles-grid"></div>
+                </div>
+
+                <!-- Details Page -->
+                <div id="page-details" style="display: none;">
+                    <div class="details-container">
+                        <div class="details-left">
+                            <div class="back-link" onclick="openHome()">
+                                <i class="fas fa-arrow-left"></i> Voltar para a loja
+                            </div>
+                            <div class="vehicle-info-header">
+                                <span class="badge" id="detail-class">CLASS</span>
+                                <h1 id="detail-name">NOME</h1>
+                                <div class="detail-price-container" id="detail-price">
+                                    <span class="value">R$ 0,00</span>
+                                </div>
+                            </div>
+
+                            <div class="specs-grid">
+                                <div class="spec-item">
+                                    <i class="fas fa-boxes"></i>
+                                    <div class="spec-info">
+                                        <span class="label">Porta-Malas</span>
+                                        <span class="value" id="detail-capacity">0L</span>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-warehouse"></i>
+                                    <div class="spec-info">
+                                        <span class="label">Estoque</span>
+                                        <span class="value" id="detail-stock">0</span>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <div class="spec-info">
+                                        <span class="label">Performance</span>
+                                        <span class="value">Premium</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="action-buttons" id="main-actions">
+                                <button class="btn-buy" id="btn-buy-vehicle">Comprar Veículo</button>
+                                <button class="btn-test" id="btn-test-drive">Test Drive</button>
+                            </div>
+                        </div>
+                        <div class="details-right">
+                            <div class="vehicle-display">
+                                <img id="detail-img" src="" alt="Veículo"
+                                    onerror="this.src='https://heits.com.br/veiculospastanova222345/carrosemft2.png'">
+                                <div class="reflection"></div>
+                                <div class="rotation-controls">
+                                    <button onclick="rotateVehicle('Left')"><i class="fas fa-undo"></i></button>
+                                    <button onclick="rotateVehicle('Right')"><i class="fas fa-redo"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="related-section">
+                        <div class="section-header">
+                            <h3>Veículos Relacionados</h3>
+                        </div>
+                        <div id="related-container" class="vehicles-grid"></div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- Popups & Modals -->
+        <div id="popup-color" class="modal" style="display:none;">
+            <div class="modal-content color-picker-modal">
+                <i class="fas fa-times close-modal" onclick="closeColorPopup()"></i>
+                <h3>Personalize seu Veículo</h3>
+                <p>Escolha a cor que melhor combina com você</p>
+                <div class="color-picker-wrapper">
+                    <div class="color-preview" id="color-preview"></div>
+                    <div class="pickr-mount"></div>
+                </div>
+                <button class="btn-confirm" id="btn-confirm-color">Confirmar Pedido</button>
+            </div>
+        </div>
+
+        <div id="popup-confirm" class="modal" style="display:none;">
+            <div class="modal-content confirm-modal">
+                <div class="icon-warning"><i class="fas fa-exclamation-circle"></i></div>
+                <h3 id="popup-confirm-title">Confirmar Ação</h3>
+                <p id="popup-confirm-message"></p>
+                <div class="modal-actions">
+                    <button class="btn-cancel" id="popup-confirm-no">Cancelar</button>
+                    <button class="btn-confirm" id="popup-confirm-yes">Confirmar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-loading" class="modal" style="display:none;">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <p>Processando...</p>
+            </div>
+        </div>
+
+        <div id="popup-result" class="modal" style="display:none;">
+            <div class="modal-content result-modal">
+                <div id="result-icon" class="icon-success"><i class="fas fa-check-circle"></i></div>
+                <h3 id="popup-result-title">Sucesso!</h3>
+                <p id="popup-result-message"></p>
+                <button class="btn-primary" id="popup-result-ok">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

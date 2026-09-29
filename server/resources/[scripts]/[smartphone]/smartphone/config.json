@@ -1,0 +1,52 @@
+{
+  "token": "",
+  "client": {
+    
+    "apps": {
+      "calculator": "https://rotbots.netlify.app/projects/smartphone/imagens/calculator.webp",
+      "notes": "https://rotbots.netlify.app/projects/smartphone/imagens/notes.webp",
+      "settings": "https://rotbots.netlify.app/projects/smartphone/imagens/settings.webp",
+      "contacts": "https://rotbots.netlify.app/projects/smartphone/imagens/phone.webp",
+      "sms": "https://rotbots.netlify.app/projects/smartphone/imagens/sms.webp",
+      "gallery": "https://rotbots.netlify.app/projects/smartphone/imagens/gallery.webp",
+      "phone": "https://rotbots.netlify.app/projects/smartphone/imagens/phone.webp",
+      "facetime": "https://rotbots.netlify.app/projects/smartphone/imagens/facetime.webp",
+      "instagram": { "name": "Instagram", "icon": "https://rotbots.netlify.app/projects/smartphone/imagens/instagram.webp" },
+      "minesweeper": { "name": "Campo Minado", "icon": "https://rotbots.netlify.app/projects/smartphone/imagens/minado.webp" },
+      "truco": "https://rotbots.netlify.app/projects/smartphone/imagens/truco.webp",
+      "yellowpages": { "name": "Yellow Pages", "icon": "https://rotbots.netlify.app/projects/smartphone/imagens/yellowpages.webp" },
+      "tinder": { "name": "Tinder", "icon": "https://rotbots.netlify.app/projects/smartphone/imagens/tinder.webp" },
+      "whatsapp": { "name": "Whatsapp", "icon": "https://rotbots.netlify.app/projects/smartphone/imagens/whatsapp.webp" },
+      "tor": { "name": "Deep Web", "icon": "https://rotbots.netlify.app/projects/smartphone/imagens/tor.webp"},
+      "bank": "https://rotbots.netlify.app/projects/smartphone/imagens/fleeca.webp",
+      "weazel": { "name": "Weazel News" }
+    },
+
+    "bankType": "fleeca",
+    "uploadServer": "https://discord.com/api/webhooks/1174898301984850020/pzw2AuxnUuOAFhHISFif6ZFaw4M7mNVGOtGyWUn4j2wuH5Ryus9qa3QdHb8qWEwZtnov",
+    "allowUnsafeURL": true,
+    "videoServer": "ws://127.0.0.1:8080",
+    "case": "iphonexs",
+    "isAndroid": false,
+    "useGameClock": true,
+    "phone_template": "XXX-XXX",
+    "backgroundURL": "https://w0.peakpx.com/wallpaper/984/232/HD-wallpaper-samsung-galaxy-s9-abstract-blue-dark-flag-marvel-mystic-phone-themes.jpg",
+    "disabledApps": ["minesweeper"],
+    "ringSound": "https://rotbots.netlify.app/projects/smartphone/sons/ring.ogg",
+    "notificationSound": "https://rotbots.netlify.app/projects/smartphone/sons/notification.ogg"
+  },
+  "call_mode": "pma-voice",
+  "webhookURL": "https://discord.com/api/webhooks/1174898301984850020/pzw2AuxnUuOAFhHISFif6ZFaw4M7mNVGOtGyWUn4j2wuH5Ryus9qa3QdHb8qWEwZtnov",
+  "instagram_verify": "Premium",
+  "instagram_accounts": { "Premium": 3, "Premium": 4, "Premium": 5,  "Premium": 6, "Premium": 8 },
+  "moderator": "Admin",
+  "item": "cellphone",
+  "services": [
+    { "name": "Policia", "number": "190", "permission": "Police", "dev": true },
+    { "name": "Paramédico", "number": "192", "permission": "Paramedic", "dev": true },
+    { "name": "Mecânica Norte", "number": "0800 041", "permission": "Mechanic", "dev": true },
+    { "name": "Prefeitura", "number": "0800 043", "permission": "Admin", "dev": true },
+    { "name": "Mecânica Sul", "number": "0800 042", "permission": "Bennys", "dev": true }
+  ],
+  "base": "bahamas_network"
+}

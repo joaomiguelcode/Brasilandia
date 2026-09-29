@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+::-webkit-scrollbar { width: 0.3vw; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.3); border-radius: 0.3vw; }
+::-webkit-scrollbar-thumb:hover { opacity: .7; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+#Body {
+	width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#Background {
+	position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/background.png');
+    background-size: 100% 100%;
+    opacity: .2;
+    z-index: -1;
+}
+
+#Services {
+	position: absolute;
+    width: 39.167vw;
+    height: 41.25vw;
+    background: rgba(0, 0, 0, 0.74);
+    border-radius: 1.094vw;   
+    z-index: 2;
+	overflow: hidden;
+    padding: 2.083vw 2.448vw;
+}
+
+#Header {
+	width: 100%;
+    height: 8.333vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Title {
+	display: flex;
+    flex-direction: column;
+    margin-left: 3.646vw;
+}
+
+.Title h1 {
+	font-weight: 600;
+	font-size: 2.083vw;
+	line-height: 3.125vw;
+	color: #FFF;
+}
+
+.Title p {
+	font-weight: 500;
+	font-size: 1.25vw;
+	line-height: 1.875vw;
+	color: #ffabab;
+	margin-top: -1vw;
+}
+
+.Add {
+	margin-right: 2.448vw;
+    gap: 0.521vw;
+}
+
+.Add p {
+	font-weight: 300;
+	font-size: 0.729vw;
+	line-height: 1.094vw;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.Add div {
+	width: 11.771vw;
+    height: 2.24vw;
+    background: linear-gradient(92.51deg, rgba(125, 0, 0, 0.3) -5.33%, rgba(158, 0, 0, 0.3) 100.68%);
+    border-radius: 0.365vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Add input {
+	width: 6.563vw;
+	height: 100%;
+	background: transparent;
+	font-weight: 500;
+	font-size: 0.729vw;
+	line-height: 1.094vw;
+	color: #ffcbcb;
+	text-align: center;
+}
+
+.Add input::placeholder {
+	color: #ffcbcb;
+}
+
+.Add button {
+	width: 5.208vw;
+	height: 100%;
+	background: linear-gradient(92.51deg, rgba(189, 0, 0, 0.3) -5.33%, rgba(158, 0, 0, 0.3) 100.68%);
+	border-radius: 0.365vw;
+	font-weight: 600;
+	font-size: 0.625vw;
+	line-height: 0.938vw;
+	color: #ff0000;
+	cursor: pointer;
+	transition: all ease .4s;
+}
+
+.Add button:hover {
+	background: linear-gradient(92.51deg, rgba(189, 0, 0, 0.2) -5.33%, rgba(158, 0, 0, 0.2) 100.68%);
+}
+
+.Add button:active {
+	background: linear-gradient(92.51deg, rgba(189, 0, 0, 0.1) -5.33%, rgba(158, 0, 0, 0.1) 100.68%);
+}
+
+.Table {
+    max-height: 27.604vw;
+	overflow-y: auto;
+}
+
+#Content {
+	position: relative;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+	width: 100%;
+    height: 1.7vw;
+}
+
+thead > tr {
+	position: relative;
+}
+
+th {
+	width: 10.5vw;
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 400;
+	text-align: left;
+	font-size: 0.729vw;
+}
+
+.Line:nth-child(odd) {
+	background: rgba(189, 0, 0, 0.1);
+}
+
+th,
+td {
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+td {
+	padding-top: 0.875vw;
+	padding-bottom: 0.875vw;
+}
+
+tbody {
+    font-size: 0.833vw;
+    font-weight: 400;
+    border-radius: 0.26vw;
+    overflow: auto;
+    padding-right: 0.521vw;
+}
+
+tr {
+	width: 100%;
+	height: 2.76vw;
+}
+
+td {
+	position: relative;
+    color: #FFFFFF;
+}
+
+.Name {
+	display: flex;
+	align-items: center;
+}
+
+.Status {
+    width: 0.417vw;
+    height: 0.417vw;
+    min-width: 0.417vw;
+    min-height: 0.417vw;
+	margin-right: 0.5vw;
+	background: #F64740;
+	box-shadow: 0vw 0vw 0.521vw rgba(246, 71, 64, 0.4);
+    border-radius: 0.156vw;
+}
+
+.Status.Verde {
+	background: #00BC7E;
+	box-shadow: 0vw 0vw 0.521vw rgba(0, 188, 126, 0.4);
+}
+
+.Management {
+	display: flex;
+	gap: 5px;
+}
+
+.Management > button {
+	cursor: pointer;
+	outline: none;
+    border: none;
+    width: 1.458vw;
+    height: 1.458vw;
+    border-radius: 0.208vw;
+    margin-right: 0.417vw;
+    background-color: rgba(0,0,0,0.5);
+    transition: all .2s ease-in-out;
+}
+
+.Management > button:disabled {
+	opacity: .4;
+	cursor: default;
+}
+
+.Management > button:not(:disabled):hover {
+	opacity: .7;
+}
+
+.Management > button#Up {
+	background-color: rgba(0, 188, 126, 0.08);
+}
+
+.Management > button#Down {
+	background-color: rgba(188, 135, 0, 0.08);
+}
+
+.Management > button#Remove {
+	background-color: rgba(246, 71, 64, 0.08);
+}
+
+.Management > button img {
+	width: 0.677vw;
+}
+
+#Modal {
+	position: absolute;
+	width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+	z-index: 5;
+}
+
+.ModalContent {
+	position: absolute;
+    width: 19.167vw;
+    min-height: 11.25vw;
+    background: rgba(0, 0, 0, 0.74);
+    border-radius: 0.875vw;   
+    z-index: 2;
+	overflow: hidden;
+    padding: 2.083vw 2.448vw;
+}
+
+.ModalTitle {
+	width: 100%;
+	margin-bottom: 1vw;
+	font-size: 1.25vw;
+	line-height: 1.875vw;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.ModalTitle b {
+	font-weight: 700;
+	color: #ff0000;
+}
+
+.Buttons {
+	display: flex;
+	align-items: center;
+	gap: 0.5vw;
+}
+
+.Buttons > button {
+	cursor: pointer;
+	width: 50%;
+	height: 2.24vw;
+	background: linear-gradient(92.51deg, rgba(255, 255, 255, 0.7) -5.33%, rgba(255, 255, 255, 0.7) 100.68%);
+	border-radius: 0.365vw;
+	font-weight: 600;
+	font-size: 0.625vw;
+	line-height: 0.938vw;
+	color: #ff3434;
+	cursor: pointer;
+	transition: all ease .4s;
+}
+
+.Buttons > button:hover {
+	background: linear-gradient(92.51deg, rgba(255, 255, 255, 0.5) -5.33%, rgba(255, 255, 255, 0.5) 100.68%);
+}
+
+.Buttons > button:active {
+	background: linear-gradient(92.51deg, rgba(255, 255, 255, 0.4) -5.33rgba(255, 255, 255, 0.4).4) 100.68%);
+}
+
+.Buttons > button#Cancel {
+	background: transparent;
+	border: 1px solid rgba(158, 0, 0, 0.8);
+}

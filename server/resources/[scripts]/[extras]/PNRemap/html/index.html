@@ -1,0 +1,257 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+  <style>
+    * { box-sizing: border-box; user-select: none; }
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: transparent;
+    }
+    #app {
+      position: absolute;
+      right: 3vh;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 280px;
+      height: 560px;
+      border-radius: 28px;
+      border: 2px solid rgba(130, 190, 255, 0.25);
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255, 0, 0, 0.15), transparent 42%),
+        linear-gradient(135deg, #1e1e1e 0%, #101010 100%);
+      box-shadow: 0 0 28px rgba(0, 0, 0, 0.8), 0 0 18px rgba(30, 120, 255, 0.35);
+      padding: 18px 14px;
+      display: none;
+      color: #efefef;
+    }
+    #app:before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border-radius: 22px;
+      background-image: repeating-linear-gradient(135deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 7px);
+      pointer-events: none;
+    }
+    .top {
+      position: relative;
+      text-align: center;
+      margin-top: 4px;
+    }
+    .brand {
+      color: #ff2e2e;
+      font-weight: 800;
+      font-size: 26px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.45);
+    }
+    .subtitle {
+      margin-top: 2px;
+      font-size: 10px;
+      color: #c5c5c5;
+      letter-spacing: 1px;
+    }
+    .gauge {
+      margin: 26px auto 0;
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 25%, #323232 0%, #0e0e0e 70%);
+      border: 2px solid #3a3a3a;
+      position: relative;
+      box-shadow: inset 0 0 18px rgba(255,255,255,0.08), 0 0 14px rgba(255,0,0,0.22);
+    }
+    .gauge-ring {
+      position: absolute;
+      inset: 10px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 0, 0, 0.5);
+    }
+    .needle {
+      position: absolute;
+      width: 64px;
+      height: 4px;
+      background: linear-gradient(90deg, #808080 0%, #ff1f1f 65%, #ffffff 100%);
+      left: 50%;
+      top: 50%;
+      transform-origin: 0% 50%;
+      transform: rotate(-110deg);
+      border-radius: 4px;
+      box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+    }
+    .gauge-center {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #d9d9d9;
+      border: 2px solid #ff2e2e;
+    }
+    .readout {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .readout span {
+      color: #ff4747;
+      font-weight: 700;
+    }
+    .grid {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      position: relative;
+    }
+    .tile {
+      background: rgba(15, 15, 15, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 10px 8px;
+      text-align: center;
+    }
+    .label {
+      font-size: 10px;
+      color: #b5b5b5;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    .value {
+      margin-top: 4px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #f7f7f7;
+    }
+    .value.red { color: #ff4040; }
+    .bottom {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.5);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 11px;
+      color: #c8c8c8;
+    }
+    .close-btn {
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      background: rgba(255,255,255,0.08);
+      padding: 5px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="top">
+      <div class="brand">SPEED</div>
+      <div class="subtitle">PERFORMANCE CONTROL</div>
+    </div>
+
+    <div class="gauge">
+      <div class="gauge-ring"></div>
+      <div class="needle" id="needle"></div>
+      <div class="gauge-center"></div>
+    </div>
+
+    <div class="readout">
+      RPM: <span id="rpm">0%</span><br />
+      Turbo: <span id="turbo">0.00</span>
+    </div>
+
+    <div class="grid">
+      <div class="tile">
+        <div class="label">Status</div>
+        <div class="value red" id="status">OFF</div>
+      </div>
+      <div class="tile">
+        <div class="label">Nitro</div>
+        <div class="value" id="nitro">NO</div>
+      </div>
+      <div class="tile">
+        <div class="label">Velocidade</div>
+        <div class="value" id="speed">0</div>
+      </div>
+      <div class="tile">
+        <div class="label">Marcha</div>
+        <div class="value" id="gear">N</div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div>ATHLON PANEL</div>
+      <button class="close-btn" id="closeBtn">Fechar</button>
+    </div>
+  </div>
+
+  <script>
+    let audioPlayer = null;
+    const app = document.getElementById("app");
+    const needle = document.getElementById("needle");
+
+    function setGauge(rpmPercent) {
+      const normalized = Math.max(0, Math.min(100, rpmPercent || 0));
+      const angle = -110 + (normalized * 2.2);
+      needle.style.transform = `rotate(${angle}deg)`;
+      document.getElementById("rpm").textContent = `${normalized.toFixed(0)}%`;
+    }
+
+    window.addEventListener("message", function (event) {
+      const data = event.data || {};
+
+      if (data.transactionType === "playSound") {
+        if (audioPlayer != null) {
+          audioPlayer.pause();
+        }
+        audioPlayer = new Howl({ src: ["./sounds/" + data.transactionFile + ".ogg"] });
+        audioPlayer.volume(data.transactionVolume || 1.0);
+        audioPlayer.play();
+      }
+
+      if (data.transactionType === "updateVolume" && audioPlayer) {
+        audioPlayer.volume(data.transactionVolume || 1.0);
+      }
+
+      if (data.transactionType === "showPanel") {
+        app.style.display = "block";
+      }
+
+      if (data.transactionType === "hidePanel") {
+        app.style.display = "none";
+      }
+
+      if (data.transactionType === "panelData") {
+        setGauge(data.rpmPercent);
+        document.getElementById("turbo").textContent = (data.turbo || 0).toFixed(2);
+        document.getElementById("status").textContent = data.status || "OFF";
+        document.getElementById("nitro").textContent = data.nitro ? "ON" : "NO";
+        document.getElementById("speed").textContent = `${data.speed || 0}`;
+        document.getElementById("gear").textContent = `${data.gear || "N"}`;
+      }
+    });
+
+    document.getElementById("closeBtn").addEventListener("click", function () {
+      fetch(`https://${GetParentResourceName()}/closePanel`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: "{}"
+      });
+    });
+  </script>
+</body>
+</html>

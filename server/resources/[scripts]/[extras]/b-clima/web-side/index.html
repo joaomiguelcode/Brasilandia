@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nui">
+        <div class="container">
+            <div class="times">
+                <div id="time-display">01:00</div>
+                <input type="range" id="time-slider" min="0" max="23" value="1">
+            </div>
+            <button id="apply-button">Aplicar</button>
+            <div class="column-container">
+                <div class="column">
+                    <div class="square clear">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="clear" value="CLEAR" class="slider" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <label for="clear">Clear</label>
+                    </div>
+                    <div class="square extra-sunny">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="extra-sunny" value="EXTRA_SUNNY" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="extra-sunny">Extra Sunny</label>
+                    </div>
+                    <div class="square clouds">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="clouds" value="CLOUDS" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="clouds">Clouds</label>
+                    </div>
+                    <div class="square smog">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="smog" value="SMOG" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="smog">Smog</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="square foggy">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="foggy" value="FOGGY" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="foggy">Foggy</label>
+                    </div>
+                    <div class="square overcast">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="overcast" value="OVERCAST" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="overcast">Overcast</label>
+                    </div>
+                    <div class="square rain">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="rain" value="RAIN" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="rain">Rain</label>
+                    </div>
+                    <div class="square thunder">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="thunder" value="THUNDER" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="thunder">Thunder</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="square snow">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="snow" value="SNOW" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="snow">Snow</label>
+                    </div>
+                    <div class="square blizzard">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="blizzard" value="BLIZZARD" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="blizzard">Blizzard</label>
+                    </div>
+                    <div class="square hurricane">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="hurricane" value="HURRICANE" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="hurricane">Hurricane</label>
+                    </div>
+                    <div class="square sandstorm">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="sandstorm" value="SANDSTORM" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="sandstorm">Sandstorm</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="square snowlight">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="snowlight" value="SNOWLIGHT" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="snowlight">Snowlight</label>
+                    </div>
+                    <div class="square xmas">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="xmas" value="XMAS" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="xmas">Xmas</label>
+                    </div>
+                    <div class="square halloween">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="halloween" value="HALLOWEEN" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="halloween">Halloween</label>
+                    </div>
+                    <div class="square sunny-windy">
+                        <label class="switch">
+                            <input type="radio" name="weather" id="sunny-windy" value="SUNNY_WINDY" class="slider">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="sunny-windy">Sunny Windy</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

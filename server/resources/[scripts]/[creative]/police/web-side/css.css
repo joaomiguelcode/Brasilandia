@@ -1,0 +1,925 @@
+body,
+td,
+th {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  cursor: default;
+  vertical-align: baseline;
+  outline: 0;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+}
+
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+img {
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#prenderTexto {
+  color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ul, li {
+  list-style-type: none;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+#mainPage {
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: 700px;
+  display: none;
+  /*overflow: overlay;*/
+  position: absolute;
+  border: 7px solid #111;
+  transform: translate(-50%, -50%);
+  background: #1E1E2F;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+#header {
+  float: right;
+  width: 960px;
+  overflow: auto;
+  margin: 30px 10px 30px 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+#mainMenu {
+  float: left;
+  width: 210px;
+  height: 100%;
+  background: #27293D;
+}
+
+#mainMenu .nav {
+  margin-top: 20px;
+  display: block;
+}
+
+#mainMenu .nav .caret {
+  top: 14px;
+  position: absolute;
+  right: 10px;
+}
+
+#mainMenu .nav li {
+  background-color: #2D2F44;
+}
+
+#mainMenu .nav li.active {
+  background-color: #212335;
+}
+
+#mainMenu .nav li > a + div .nav {
+  margin-top: 5px;
+}
+
+#mainMenu .nav li > a + div .nav li > a {
+  margin-top: 0px;
+  padding: 8px 8px;
+}
+
+#mainMenu .nav li > a {
+  margin: 10px 15px 0;
+  border-radius: 30px;
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.62475rem;
+  padding: 10px 8px;
+  line-height: 1.625rem;
+}
+
+#mainMenu .nav li:first-child > a {
+  margin: 0 15px;
+}
+
+#mainMenu .nav li:hover:not(.active) > a p,
+#mainMenu .nav li:hover:not(.active) > a i,
+#mainMenu .nav li:focus:not(.active) > a p,
+#mainMenu .nav li:focus:not(.active) > a i {
+  color: #FFF;
+}
+
+#mainMenu .nav li:hover:not(.active) > a i,
+#mainMenu .nav li:focus:not(.active) > a i {
+  color: #FFF;
+}
+
+#mainMenu .nav p {
+  margin: 0;
+  line-height: 30px;
+  position: relative;
+  display: block;
+  font-size: 15px;
+  height: auto;
+  white-space: nowrap;
+}
+
+#mainMenu .logo {
+  position: relative;
+  padding: 0.5rem 0.7rem;
+  z-index: 4;
+}
+
+#mainMenu .logo:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  height: 1px;
+  width: calc(100% - 30px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+#content {
+  float: right;
+  width: 960px;
+  overflow: auto;
+  margin: 30px 10px 30px 10px;
+}
+
+#titleContent {
+  float: left;
+  width: 960px;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 700;
+  margin-top: -46px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  padding: 5px 0 10px 15px;
+  text-transform: uppercase;
+  position: absolute !important;
+  border-bottom: 1px dotted #FFF;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+#pageLeft {
+  float: left;
+  min-width: 672px;
+  max-width: 672px;
+  max-height: 540px;
+  overflow-y: scroll;
+}
+
+#pageRight {
+  float: left;
+  min-width: 200px;
+  max-width: 200px;
+  margin-left: 10px;
+  color: #FFF;
+  text-align: justify;
+  padding-left: 10px;
+  line-height: 20px;
+  min-height: 540px;
+  max-height: 540px;
+  border-left: 1px dotted #FFF;
+}
+
+#pageRight h2 {
+  padding: 0;
+  margin: 5px 0 10px;
+}
+
+/* ----- SEARCH ---------------------------------------------------------------------------------------------------- */
+.inputSearch {
+  border: 0;
+  float: left;
+  width: 800px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(53, 82, 143, 1);
+}
+
+.buttonSearch {
+  border: 0;
+  float: right;
+  width: 140px;
+  color: #FFF;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #040A44;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonSearch:hover {
+  background: #071069;
+  transition: all 0.9s;
+}
+
+/* ----- Extra  ------------------------------------------------------------------------------------------------ */
+#pageCenter {
+  width: 960px;
+  max-height: 540px;
+  overflow-y: scroll;
+}
+
+/* ----- SEARCHPAGE ------------------------------------------------------------------------------------------------ */
+#pageLeftSearch {
+  float: left;
+  min-width: 695px;
+  max-width: 695px;
+  max-height: 540px;
+  overflow-y: scroll;
+}
+
+.fineSeachTitle {
+  float: left;
+  min-width: 655px;
+  max-width: 655px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #CCC;
+}
+
+.fineSeachTitle2 {
+  float: left;
+  min-width: 960px;
+  max-width: 960px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #CCC;
+}
+
+.fineSeachTitle3 {
+  float: left;
+  min-width: 960px;
+  max-width: 960px;
+}
+
+.buttonPrisao,
+.buttonExcluirProcurado,
+.buttonExcluirPorte,
+.buttoneditPort,
+.buttonProcurado {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.inputFormCenter {
+  border: 0;
+  float: left;
+  width: 465px;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.inputFormCenter2 {
+  border: 0;
+  float: left;
+  width: 465px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.inputFormCenter3 {
+  border: 0;
+  float: left;
+  width: 940px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.textareaFormCenter {
+  border: 0;
+  float: left;
+  width: 940px;
+  resize: none;
+  height: 200px;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.searchBox {
+  float: left;
+  width: 655px;
+  padding: 20px;
+  font-size: 13px;
+  background: #FFF;
+  border-radius: 3px;
+  line-height: 22px;
+}
+
+.infoPrisao {
+  float: left;
+  width: 700px;
+  padding: 20px;
+  font-size: 13px;
+  background: #FFF;
+  border-radius: 3px;
+  line-height: 22px;
+}
+
+.infoPrisaoFoto {
+  float: right;
+  width: 200px;
+  background: #FFF;
+  border-radius: 3px;
+}
+
+.infoPrisaoFoto img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.infoPrisaoFoto .foto {
+  height: 200px;
+  width: 200px;
+}
+
+.infoBox {
+  float: left;
+  width: 960px;
+  padding: 20px;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 22px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.infoBox:hover {
+  transition: all 0.9s;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.infoBox b .searchBox b,
+.recordBox {
+  color: #333;
+}
+
+.searchBox update {
+  color: #C7EA9E;
+  font-size: 10px;
+  border-radius: 3px;
+  background: #2D5300;
+  padding: 2px 7px 3px;
+}
+
+.centerBox {
+  float: left;
+  width: 960px;
+  padding: 20px;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 22px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.centerBox:hover {
+  transition: all 0.9s;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.recordBox {
+  float: left;
+  width: 655px;
+  padding: 20px;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 22px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.recordBox:hover {
+  transition: all 0.9s;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.logsBox {
+  float: left;
+  width: 655px;
+  font-size: 13px;
+  line-height: 22px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: #FFF;
+}
+
+.logsBox:last-child {
+  margin-bottom: 0px;
+}
+
+/* ----- PRISON ---------------------------------------------------------------------------------------------------- */
+.inputPrisonPassaporte {
+  border: 0;
+  float: left;
+  width: 660px;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.inputPrison {
+  border: 0;
+  float: left;
+  width: 326px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.inputPrison2 {
+  border: 0;
+  float: left;
+  width: 214px;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.textareaPrison {
+  border: 0;
+  float: left;
+  width: 665px;
+  resize: none;
+  height: 200px;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: white;
+}
+.textareaBoletim {
+  border: 0;
+  float: left;
+  width: 665px;
+  resize: none;
+  height: 200px;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: white;
+}
+.inputTentativas {
+  border: 0;
+  float: left;
+  width: 328px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.inputTentativas2 {
+  border: 0;
+  float: left;
+  width: 328px;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.colorCrimes {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.colorH3 {
+  color: white;
+}
+
+.buttonPrisonLimpar {
+  border: 0;
+  float: right;
+  color: #FFF;
+  margin-top: 10px;
+  padding: 10px 15px;
+  margin-right: 5px;
+  border-radius: 3px;
+  background: #800011;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonPrisonLimpar:hover {
+  background: #9E1426;
+  transition: all 0.9s;
+}
+
+.buttonVoltar,
+.buttonAddProcurado {
+  border: 0;
+  float: right;
+  color: #FFF;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #040A44;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonVoltar:hover,
+.buttonAddProcurado:hover {
+  background: #071069;
+  transition: all 0.9s;
+}
+
+.buttonEditarPorte,
+.buttonAddPorte {
+  border: 0;
+  float: right;
+  color: #FFF;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #040A44;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonEditarPorte:hover,
+.buttonAddPorte:hover {
+  background: #071069;
+  transition: all 0.9s;
+}
+
+.buttonAddPortes {
+  border: 0;
+  float: right;
+  color: #FFF;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #040A44;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonAddPortes:hover {
+  background: #071069;
+  transition: all 0.9s;
+}
+
+.buttonAddP {
+  border: 0;
+  float: right;
+  color: #FFF;
+  margin-top: 10px;
+  padding: 10px 15px;
+  margin-right: 20px;
+  border-radius: 3px;
+  background: #040A44;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonAddP:hover {
+  background: #071069;
+  transition: all 0.9s;
+}
+
+.buttonPrison {
+  border: 0;
+  float: right;
+  color: #FFF;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #040A44;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonPrison:hover {
+  background: #071069;
+  transition: all 0.9s;
+}
+
+.buttonCrimes {
+  border: 0;
+  float: right;
+  color: #FFF;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #040A44;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonCrimes:hover {
+  background: #071069;
+  transition: all 0.9s;
+}
+
+.buttonEdit {
+  border: 0;
+  float: right;
+  color: #C7EA9E;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #3B6E00;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonEdit:hover {
+  background: #2D5300;
+  transition: all 0.9s;
+}
+
+/* ----- FINE ---------------------------------------------------------------------------------------------------- */
+.inputFine {
+  border: 0;
+  float: left;
+  width: 328px;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.inputFine2 {
+  border: 0;
+  float: left;
+  width: 328px;
+  padding: 15px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.textareaFine {
+  border: 0;
+  float: left;
+  width: 666px;
+  resize: none;
+  height: 200px;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.buttonFine {
+  border: 0;
+  float: right;
+  color: #C7EA9E;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #3B6E00;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonFine:hover {
+  background: #2D5300;
+  transition: all 0.9s;
+}
+.buttonReport {
+  border: 0;
+  float: right;
+  color: #C7EA9E;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #3B6E00;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.buttonReport:hover {
+  background: #2D5300;
+  transition: all 0.9s;
+}
+
+s {
+  color: #3B6E00;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* MODAL NECESSÁRIA */
+/* [Object] Modal
+ * =============================== */
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgb(255 255 255 / 22%);
+  transition: opacity .25s ease;
+}
+
+.modal__inner h2 {
+  color: white;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  margin: auto;
+  overflow: auto;
+  background: #1E1E2F;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 50%;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #CCC;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #AAA;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .modal__inner {
+	width: 90%;
+	height: 90%;
+	box-sizing: border-box;
+  }
+}
+
+.crimesleft {
+  float: left;
+  width: 360px;
+  text-align: left;
+}
+
+.crimesright {
+  float: right;
+  width: 360px;
+  text-align: left;
+}
+
+.inputTentativasModal {
+  float: left;
+  width: 355px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.inputTentativasModal2 {
+  float: left;
+  width: 355px;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, .3);
+}

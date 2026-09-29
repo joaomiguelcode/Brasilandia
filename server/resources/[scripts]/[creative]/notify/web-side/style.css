@@ -1,0 +1,316 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	user-select: none;
+	box-sizing: border-box;
+	font-family: "League Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-size: 0.83vw;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: transparent !important;
+}
+
+/* ========================================================================= */
+/* NOTIFICATIONS (NOTIFICAÇÕES DO SERVIDOR)                                  */
+/* ========================================================================= */
+#notifications {
+	position: fixed;
+	right: 2.2rem;
+	bottom: 12rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.65rem;
+	z-index: 99999;
+	pointer-events: none;
+	max-width: 25rem;
+}
+
+.notify-card {
+	--rgb: 251, 4, 45;
+	display: flex;
+	align-items: center;
+	position: relative;
+	min-width: 19.5rem;
+	max-width: 24rem;
+	min-height: 4.2rem;
+	padding: 0.85rem 1.1rem 0.85rem 3.6rem;
+	border-radius: 0.25rem;
+	border: 0.05rem solid rgba(255, 255, 255, 0.09);
+	background: linear-gradient(135deg, rgba(11, 8, 10, 0.98) 0%, rgba(17, 11, 15, 0.97) 100%);
+	box-shadow:
+		0 10px 25px -4px rgba(0, 0, 0, 0.75),
+		inset 0 1px 0 rgba(255, 255, 255, 0.10),
+		0 0 20px -8px rgba(var(--rgb), 0.4);
+	overflow: hidden;
+	color: #E8E8E8;
+	animation: notifySlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+	transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.notify-card.leaving {
+	animation: notifySlideOut 0.32s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Textura suave scribble.svg no fundo da notificação */
+.notify-card::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url("./assets/scribble.svg");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 160%;
+	opacity: 0.06;
+	pointer-events: none;
+	z-index: 1;
+}
+
+/* Aura de luz atrás do ícone da notificação */
+.notify-icon-glow {
+	position: absolute;
+	left: 0.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 2.8rem;
+	height: 2.8rem;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(var(--rgb), 0.25) 0%, transparent 70%);
+	pointer-events: none;
+	z-index: 1;
+}
+
+.notify-text {
+	position: relative;
+	z-index: 2;
+	font-size: 0.85rem;
+	font-weight: 600;
+	line-height: 1.35;
+	letter-spacing: 0.02em;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.notify-text b,
+.notify-card b {
+	color: #FFF;
+	font-weight: 800;
+}
+
+/* Barra de tempo da notificação */
+.timer-bar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.188rem;
+	background: rgba(255, 255, 255, 0.06);
+	z-index: 3;
+}
+
+.timer-bar-fill {
+	height: 100%;
+	width: 100%;
+	background: rgb(var(--rgb));
+	box-shadow: 0 0 8px rgba(var(--rgb), 0.85);
+}
+
+/* ==================== TIPOS DE NOTIFICAÇÃO ==================== */
+#verde {
+	--rgb: 16, 185, 129;
+	background-image: url("images/check.png");
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: 1.5rem 1.5rem;
+}
+
+#vermelho {
+	--rgb: 251, 4, 45;
+	background-image: url("images/cancel.png");
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: 1.5rem 1.5rem;
+}
+
+#amarelo {
+	--rgb: 245, 158, 11;
+	background-image: url("images/important.png");
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: 1.5rem 1.5rem;
+}
+
+#azul {
+	--rgb: 6, 182, 212;
+	background-image: url("images/ring.png");
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: 1.5rem 1.5rem;
+}
+
+#locked {
+	--rgb: 16, 185, 129;
+	background-image: url("images/locked.png");
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: 1.5rem 1.5rem;
+}
+
+#unlocked {
+	--rgb: 251, 4, 45;
+	background-image: url("images/unlocked.png");
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: 1.5rem 1.5rem;
+}
+
+#blood {
+	--rgb: 244, 63, 94;
+	background-image: url("images/blood.png");
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: 1.5rem 1.5rem;
+}
+
+#hunger {
+	--rgb: 249, 115, 22;
+	background-image: url("images/hunger.png");
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: 1.5rem 1.5rem;
+}
+
+#thirst {
+	--rgb: 14, 165, 233;
+	background-image: url("images/thirst.png");
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: 1.5rem 1.5rem;
+}
+
+#default {
+	--rgb: 251, 4, 45;
+	padding-left: 1.1rem !important;
+}
+
+/* ========================================================================= */
+/* SHORTCUTS (HOTBAR AO PRESSIONAR TAB - ESTILO INVENTÁRIO CREATIVE)         */
+/* ========================================================================= */
+#Shortcuts {
+	width: 100%;
+	height: 95%;
+	display: none;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 1.25rem;
+	padding-bottom: 2.5rem;
+	pointer-events: none;
+	z-index: 99999;
+}
+
+#Shortcuts>div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 6.875rem;
+	height: 6.875rem;
+	border-radius: 0.125rem;
+	border: 0.05rem solid rgba(255, 255, 255, 0.08);
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.06) -22.96%, rgba(255, 255, 255, 0.03) 100.67%);
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: 3.6rem 3.6rem !important;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+	transition: all 0.25s ease;
+	overflow: visible;
+}
+
+/* Textura suave de fundo com scribble.svg em cada slot da hotbar */
+#Shortcuts>div::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url("./assets/scribble.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 140%;
+	opacity: 0.06;
+	pointer-events: none;
+	z-index: 1;
+}
+
+#Shortcuts>div.populated {
+	border-color: rgba(255, 255, 255, 0.16);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65), 0 0 15px -5px rgba(251, 4, 45, 0.35);
+}
+
+/* Badge do número da Hotbar usando hex.svg idêntico ao inventário */
+#Shortcuts b {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.3rem;
+	height: 2.5rem;
+	position: absolute;
+	left: -1.15rem;
+	top: 50%;
+	transform: translateY(-50%);
+	background-image: url("./assets/hex.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #FFF;
+	font-size: 0.85rem;
+	font-weight: 800;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+	z-index: 5;
+}
+
+/* ==================== ANIMAÇÕES ==================== */
+@keyframes notifySlideIn {
+	0% {
+		opacity: 0;
+		transform: translateX(110%) scale(0.92);
+		filter: blur(4px);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translateX(-2%) scale(1.01);
+		filter: blur(0px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) scale(1);
+		filter: blur(0px);
+	}
+}
+
+@keyframes notifySlideOut {
+	0% {
+		opacity: 1;
+		transform: translateX(0) scale(1);
+		max-height: 5rem;
+		margin-bottom: 0.65rem;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(115%) scale(0.9);
+		max-height: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: -0.65rem;
+		border-width: 0;
+	}
+}

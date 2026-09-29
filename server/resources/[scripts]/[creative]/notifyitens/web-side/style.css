@@ -1,0 +1,139 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	user-select: none;
+	box-sizing: border-box;
+	font-family: "League Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-size: 0.83vw;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	overflow: hidden;
+	background: transparent !important;
+}
+
+#notifyitens {
+	position: fixed;
+	bottom: 2rem;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 0.625rem;
+	pointer-events: none;
+	z-index: 99999;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	width: 6.875rem;
+	height: 6.875rem;
+	border-radius: 0.125rem;
+	border: 0.05rem solid rgba(255, 255, 255, 0.08);
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.06) -22.96%, rgba(255, 255, 255, 0.03) 100.67%);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.item img {
+	width: 3.5rem;
+	height: 3.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	object-fit: contain;
+}
+
+.item .top {
+	color: #999;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	z-index: 2;
+}
+
+.itemWeight {
+	color: #FFF;
+	font-size: 0.563rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 0.125rem 0.313rem;
+	border-radius: 0.125rem;
+	background: rgba(255, 255, 255, 0.10);
+	border: 0.05rem solid rgba(255, 255, 255, 0.15);
+}
+
+.itemAmount {
+	color: #FFF;
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.item .nameItem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 1.563rem;
+	color: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	font-size: 0.688rem;
+	font-weight: 600;
+	background: rgba(255, 255, 255, 0.12);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 0.25rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	z-index: 2;
+}
+
+/* Modos de destaque sutis para o badge do modo */
+.item.recebeu .itemWeight,
+.item.adicionou .itemWeight {
+	color: #10b981;
+	background: rgba(16, 185, 129, 0.15);
+	border-color: rgba(16, 185, 129, 0.35);
+}
+
+.item.removeu .itemWeight,
+.item.pagou .itemWeight {
+	color: #fb042d;
+	background: rgba(251, 4, 45, 0.15);
+	border-color: rgba(251, 4, 45, 0.35);
+}
+
+.item.equipou .itemWeight {
+	color: #06b6d4;
+	background: rgba(6, 182, 212, 0.15);
+	border-color: rgba(6, 182, 212, 0.35);
+}
+
+.item.guardou .itemWeight {
+	color: #f59e0b;
+	background: rgba(245, 158, 11, 0.15);
+	border-color: rgba(245, 158, 11, 0.35);
+}
+
+.item.quebrou .itemWeight {
+	color: #f97316;
+	background: rgba(249, 115, 22, 0.15);
+	border-color: rgba(249, 115, 22, 0.35);
+}

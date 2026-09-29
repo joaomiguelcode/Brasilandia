@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTT Influencers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/index.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        if (typeof GetParentResourceName === 'undefined') {
+            window.GetParentResourceName = function() {
+                var m = window.location.href.match(/nui-([^./]+)/);
+                return m ? m[1] : 'mtt_influencers';
+            };
+        }
+    </script>
+</body>
+</html>

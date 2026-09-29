@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #ccc;
+	text-shadow: 1px 1px rgba(0,0,0,0.25);
+
+	--target-color-primary: #fff;
+
+	--target-color-secondary: rgb(158, 36, 36);
+
+	--main-color: #fff;
+}
+
+* {
+	overflow: hidden;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+/* .Target {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+} */
+
+/* .Wrapper {
+	height: 400px;
+	position: absolute;
+	top: calc(50% - 7px);
+	left: calc(50% + 30px);
+} */
+
+/* .Eye {
+	font-size: 2.4vh;
+} */
+
+/* .Label {
+	float: left;
+	letter-spacing: 1px;
+}
+
+.Text {
+	font-size: 13px;
+	list-style: none;
+	user-select: none;
+	white-space: nowrap;
+	font-family: "Roboto";
+}
+
+.Text div {
+	display: table;
+	margin: 0 0 6px;
+}
+
+.Text div:hover {
+	color: #fec026;
+} */
+
+
+svg {
+	margin: auto;
+	fill: var(--main-color);
+}
+
+#lid {
+	animation: blink 2.4s infinite;
+}
+
+#eye {
+	animation: squeeze 2.4s infinite;
+}
+
+.Target {
+	color: #fff;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.Wrapper {
+	height: 400px;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: calc(50% + 30px);
+}
+
+.Eye {
+	color: #d6d9df;
+	font-size: 2.4vh;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.Label {
+	float: left;
+	color: #d6d9df;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px #333;
+}
+
+.Text {
+	font-size: 12px;
+	list-style: none;
+	user-select: none;
+	white-space: nowrap;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.Text div {
+	color: var(--target-color-primary);
+	display: table;
+	margin: 0 0 5px;
+	border-radius: 5px;
+	padding: 10px 15px 10px 15px;
+	background: rgba(15, 15, 15, 0.644);
+}
+
+.Text div:hover {
+	color: #ffffff;
+	background: var(--target-color-secondary);
+}
+
+@keyframes push{
+	0% {transform: scale(0)}
+	50%  {transform: scale(1.1);}
+}
+
+@keyframes blink {
+	90% {
+		transform: none;
+		animation-timing-function: ease-in;
+	}
+
+	93% {
+		transform: translateY(15px) scaleY(0)
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+	}
+}
+
+@keyframes squeeze {
+	90% {
+		transform: none;
+		animation-timing-function: ease-in;
+	}
+
+	93% {
+		transform: translateY(3px) scaleY(0.8)
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+	}
+}

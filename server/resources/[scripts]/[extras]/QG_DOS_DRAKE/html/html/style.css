@@ -1,0 +1,21 @@
+body {
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#painel {
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 200px;
+}

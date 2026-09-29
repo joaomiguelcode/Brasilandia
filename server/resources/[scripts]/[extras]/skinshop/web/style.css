@@ -1,0 +1,27 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    --color-button: #11131d;
+	--color-number: #11131de0;
+	--color-box: #161823b3;
+	--color-title: #11131de9;
+	 --color-body: #00bc7e; 
+	--color-body: #db004267;  
+	 /* --color-body: #f71953;   
+	 --color-body: #f900aa9c;    */
+	 
+
+	--color-txt: #bbbbbb;
+
+
+	 /* font-size: 100%; */
+}
+
+

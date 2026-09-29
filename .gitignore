@@ -1,0 +1,11 @@
+# FiveM Cache & Logs
+**/cache/
+*.log
+crash/
+
+# OS and Editor files
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nickolas Vidoto">
+    <title>Distrito.gg</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="app" v-if="menu == 1">
+    <div class="body-mask1"></div>
+    <div class="body-mask"></div>
+        <div v-if="menu == 1" class="menu-container">
+
+            <div class="root">
+                <header :class="{animation2: spawnAnimation}">
+                    <div class="logo">
+                        <img src="./assets/shieldc.png" alt="">
+                    </div>
+                    <div class="header-title">
+                        <h1>Escolha uma opção de spawn</h1>
+                        <h2>Após escolher clique no botão confirmar</h2>
+                    </div>
+                </header>
+                <main>
+                    <div class="cards">
+                        <div v-if="index < 5" v-for="(v,index) in showingPlaces" @click="changeInfos(index)" :class="{central: index == 1, animationL: index == 0 && animationL || index == 2 && animationL, animationR: index == 2 && animationR || index == 0 && animationR, animationCL: index == 1 && animationL, animationCR: index == 1 && animationR, animationCL: index == 1 && animationL}" class="card">
+                            <div class="card-img" :style="{ 'background-image': 'url(' + './assets/spawners/'+`${places[index].label.toLowerCase()}`+'.png' + ')' }">
+                                <div class="card-blur"></div>
+                            </div>
+                            <footer class="footer">
+                                <div class="street">
+                                    <h1>{{places[index].streetName}}</h1>
+                                </div>
+                                <div class="selectArea">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.11 2.83057C12.3768 2.83381 9.75649 3.92099 7.82385 5.85364C5.89121 7.78628 4.80402 10.4066 4.80078 13.1397C4.80078 21.9608 14.1728 28.6236 14.5718 28.9028C14.7296 29.013 14.9175 29.0721 15.11 29.0721C15.3025 29.0721 15.4903 29.013 15.6481 28.9028C16.0472 28.6236 25.4191 21.9608 25.4191 13.1397C25.4159 10.4066 24.3287 7.78628 22.3961 5.85364C20.4634 3.92099 17.8431 2.83381 15.11 2.83057ZM15.1106 9.39129C15.8521 9.39129 16.5769 9.61116 17.1934 10.0231C17.8098 10.435 18.2903 11.0205 18.5741 11.7055C18.8578 12.3905 18.9321 13.1442 18.7874 13.8714C18.6428 14.5986 18.2857 15.2666 17.7614 15.7909C17.2372 16.3152 16.5692 16.6722 15.842 16.8168C15.1148 16.9615 14.361 16.8873 13.676 16.6035C12.991 16.3198 12.4056 15.8393 11.9936 15.2228C11.5817 14.6063 11.3619 13.8815 11.3619 13.1401C11.3618 12.6478 11.4588 12.1603 11.6472 11.7055C11.8356 11.2506 12.1117 10.8374 12.4598 10.4893C12.8079 10.1411 13.2212 9.86501 13.676 9.67662C14.1309 9.48823 14.6183 9.39128 15.1106 9.39129Z" fill="white"/>
+                                    </svg>
+                                    <h1><span>{{places[index].label.toUpperCase()}}</span></h1>
+                                </div>
+                            </footer >
+                        </div>
+                        <div v-if="animationR || animationL" class="x">
+                            <div v-if="animationR" class="card y">
+                                <div class="card-img" :style="{ 'background-image': 'url(' + './assets/spawners/'+`${places[0].label.toLowerCase()}`+'.png' + ')' }">
+                                    <div class="card-blur"></div>
+                                </div>
+                                <!-- <aside>Downtown Los Santos</aside> -->
+                                <footer>
+                                    <div class="street">
+                                        <h1>Downtown Los Santos</h1>
+                                    </div>
+                                    <div class="selectArea">
+                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.11 2.83057C12.3768 2.83381 9.75649 3.92099 7.82385 5.85364C5.89121 7.78628 4.80402 10.4066 4.80078 13.1397C4.80078 21.9608 14.1728 28.6236 14.5718 28.9028C14.7296 29.013 14.9175 29.0721 15.11 29.0721C15.3025 29.0721 15.4903 29.013 15.6481 28.9028C16.0472 28.6236 25.4191 21.9608 25.4191 13.1397C25.4159 10.4066 24.3287 7.78628 22.3961 5.85364C20.4634 3.92099 17.8431 2.83381 15.11 2.83057ZM15.1106 9.39129C15.8521 9.39129 16.5769 9.61116 17.1934 10.0231C17.8098 10.435 18.2903 11.0205 18.5741 11.7055C18.8578 12.3905 18.9321 13.1442 18.7874 13.8714C18.6428 14.5986 18.2857 15.2666 17.7614 15.7909C17.2372 16.3152 16.5692 16.6722 15.842 16.8168C15.1148 16.9615 14.361 16.8873 13.676 16.6035C12.991 16.3198 12.4056 15.8393 11.9936 15.2228C11.5817 14.6063 11.3619 13.8815 11.3619 13.1401C11.3618 12.6478 11.4588 12.1603 11.6472 11.7055C11.8356 11.2506 12.1117 10.8374 12.4598 10.4893C12.8079 10.1411 13.2212 9.86501 13.676 9.67662C14.1309 9.48823 14.6183 9.39128 15.1106 9.39129Z" fill="white"/>
+                                        </svg>
+                                        <h1>SPAWN <span>PRAÇA</span></h1>
+                                    </div>
+                                    <!-- -->
+                                </footer>
+                            </div>
+                            <div v-if="animationL" class="card z">
+                                <div class="card-img" :style="{ 'background-image': 'url(' + './assets/spawners/'+`${places[places.length-1].label.toLowerCase()}`+'.png' + ')' }">
+                                    <div class="card-blur"></div>
+                                </div>
+                                <!-- <aside>Downtown Los Santos</aside> -->
+                                <footer>
+                                    <div class="street">
+                                        <h1>Downtown Los Santos</h1>
+                                    </div>
+                                    <div class="selectArea">
+                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.11 2.83057C12.3768 2.83381 9.75649 3.92099 7.82385 5.85364C5.89121 7.78628 4.80402 10.4066 4.80078 13.1397C4.80078 21.9608 14.1728 28.6236 14.5718 28.9028C14.7296 29.013 14.9175 29.0721 15.11 29.0721C15.3025 29.0721 15.4903 29.013 15.6481 28.9028C16.0472 28.6236 25.4191 21.9608 25.4191 13.1397C25.4159 10.4066 24.3287 7.78628 22.3961 5.85364C20.4634 3.92099 17.8431 2.83381 15.11 2.83057ZM15.1106 9.39129C15.8521 9.39129 16.5769 9.61116 17.1934 10.0231C17.8098 10.435 18.2903 11.0205 18.5741 11.7055C18.8578 12.3905 18.9321 13.1442 18.7874 13.8714C18.6428 14.5986 18.2857 15.2666 17.7614 15.7909C17.2372 16.3152 16.5692 16.6722 15.842 16.8168C15.1148 16.9615 14.361 16.8873 13.676 16.6035C12.991 16.3198 12.4056 15.8393 11.9936 15.2228C11.5817 14.6063 11.3619 13.8815 11.3619 13.1401C11.3618 12.6478 11.4588 12.1603 11.6472 11.7055C11.8356 11.2506 12.1117 10.8374 12.4598 10.4893C12.8079 10.1411 13.2212 9.86501 13.676 9.67662C14.1309 9.48823 14.6183 9.39128 15.1106 9.39129Z" fill="white"/>
+                                        </svg>
+                                        <h1>SPAWN <span>PRAÇA</span></h1>
+                                    </div>
+                                    <!-- -->
+                                </footer>
+                            </div>
+                        </div>
+                        <!-- 
+    
+     <div class="card-img">
+                                    
+                                </div>
+                                <div class="card-infos">
+                                    <h1>Spawn {{places[3].label}}</h1>
+        
+                                    <div  class="ultima-card">
+                                        <h1>Selecionar spawn</h1>
+                                    </div>
+                                    <div  class="card-description">
+                                        <h1>Sobre spawns</h1>
+                                        <p>{{places[3].desc}}</p>
+                                    </div>
+                                </div>
+    
+                         -->
+                    </div>
+                </main>
+                <footer>
+                    <div class="confirm" @click="spawn()">
+                        <h1>confirmar</h1>
+                    </div>
+                    <div class="lastLocation" @click="spawnLastLocation()">
+                        <h1>última posição</h1>
+                    </div>
+                </footer>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+    
+</body>
+</html>

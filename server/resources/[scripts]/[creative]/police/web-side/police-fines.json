@@ -1,0 +1,564 @@
+{
+  "data": [
+    {
+      "id": 42,
+      "attributes": {
+        "infracao": "Tráfico de Munição",
+        "multa": 1500,
+        "apreender_veiculo": false,
+        "descricao": "Posse de munição de qualquer calibre\n\n",
+        "createdAt": "2023-02-28T07:22:00.859Z",
+        "updatedAt": "2023-02-28T07:22:00.859Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 30,
+      "attributes": {
+        "infracao": "Posse ilegal de armas-Classe 2",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Ter em posse uma arma de alto calibre sem a devida autorização\n\n",
+        "createdAt": "2023-02-28T07:00:12.714Z",
+        "updatedAt": "2023-02-28T07:01:36.734Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 31,
+      "attributes": {
+        "infracao": "Porte ilegal de arma-Classe 1",
+        "multa": 1500,
+        "apreender_veiculo": false,
+        "descricao": "Portar armas de calibre baixo sem a devida autorização",
+        "createdAt": "2023-02-28T07:03:10.361Z",
+        "updatedAt": "2023-02-28T07:03:10.361Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 32,
+      "attributes": {
+        "infracao": "Porte ilegal de arma-Classe 2",
+        "multa": 2500,
+        "apreender_veiculo": false,
+        "descricao": "Portar armas de calibre alto sem a devida autorização",
+        "createdAt": "2023-02-28T07:03:51.887Z",
+        "updatedAt": "2023-02-28T07:03:51.887Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "infracao": "Abandono de Veículo",
+        "multa": 1500,
+        "apreender_veiculo": true,
+        "descricao": "Abandonar o veículo em locais indevidos",
+        "createdAt": "2023-01-31T00:44:49.835Z",
+        "updatedAt": "2023-01-31T01:00:11.073Z",
+        "categoria": "INFRAÇÕES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "infracao": "Estacionamento Irregular",
+        "multa": 1200,
+        "apreender_veiculo": true,
+        "descricao": "Estacionar em local proibido/indevido",
+        "createdAt": "2023-01-31T00:44:29.861Z",
+        "updatedAt": "2023-01-31T01:00:17.110Z",
+        "categoria": "INFRAÇÕES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 33,
+      "attributes": {
+        "infracao": "Produtos Ilícitos",
+        "multa": 1000,
+        "apreender_veiculo": false,
+        "descricao": "Possuir produtos adquiridos através de roubo ou utilização de objetos para efetuar um crime\n",
+        "createdAt": "2023-02-28T07:05:47.450Z",
+        "updatedAt": "2023-02-28T07:05:47.450Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 34,
+      "attributes": {
+        "infracao": "Receptação",
+        "multa": 1500,
+        "apreender_veiculo": false,
+        "descricao": "Estar em posse de produtos ilegais mesmo que não tenha sido adquirido pelo mesmo",
+        "createdAt": "2023-02-28T07:06:09.516Z",
+        "updatedAt": "2023-02-28T07:06:09.516Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 35,
+      "attributes": {
+        "infracao": "Sequestro",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Privar algum indivíduo da liberdade mediante ameaça ou cárcere privado\n",
+        "createdAt": "2023-02-28T07:08:39.110Z",
+        "updatedAt": "2023-02-28T07:08:39.110Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 36,
+      "attributes": {
+        "infracao": "Ameaça moderada a vida",
+        "multa": 400,
+        "apreender_veiculo": false,
+        "descricao": "Quantidade de reféns: 1",
+        "createdAt": "2023-02-28T07:08:56.569Z",
+        "updatedAt": "2023-02-28T07:08:56.569Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 1,
+      "attributes": {
+        "infracao": "Direção Perigosa",
+        "multa": 800,
+        "apreender_veiculo": false,
+        "descricao": "Uso imprudente de veículos, colocando a vida dos cidadãos em risco",
+        "createdAt": "2023-01-22T22:02:51.476Z",
+        "updatedAt": "2023-02-13T15:50:35.309Z",
+        "categoria": "INFRAÇÕES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "infracao": "Dirigir na Contramão",
+        "multa": 300,
+        "apreender_veiculo": true,
+        "descricao": "Dirigir na via oposta",
+        "createdAt": "2023-02-13T15:51:54.974Z",
+        "updatedAt": "2023-02-13T15:52:08.801Z",
+        "categoria": "INFRAÇÕES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "infracao": "Dano ao Patrimônio",
+        "multa": 2000,
+        "apreender_veiculo": true,
+        "descricao": "Danificar propriedades utilizando de veículos\n\n",
+        "createdAt": "2023-02-13T17:02:01.461Z",
+        "updatedAt": "2023-02-13T17:02:01.461Z",
+        "categoria": "INFRAÇÕES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "infracao": "Direção com veículo danificado",
+        "multa": 500,
+        "apreender_veiculo": false,
+        "descricao": "Conduzir um veículo que esteja danificado/inseguro\n\n",
+        "createdAt": "2023-02-13T17:02:32.947Z",
+        "updatedAt": "2023-02-13T17:02:32.947Z",
+        "categoria": "INFRAÇÕES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "infracao": "Danificar viatura",
+        "multa": 5000,
+        "apreender_veiculo": false,
+        "descricao": "Impedir a passagem de alguma viatura utilizando de veículos para tal",
+        "createdAt": "2023-02-13T17:03:08.849Z",
+        "updatedAt": "2023-02-13T17:03:08.849Z",
+        "categoria": "INFRAÇÕES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 8,
+      "attributes": {
+        "infracao": "Utilizar veículos OFF-ROAD na cidade",
+        "multa": 3000,
+        "apreender_veiculo": true,
+        "descricao": "A utilização de pneus para trilha no asfalto da cidade pode causar danos à via pública.\n\n",
+        "createdAt": "2023-02-21T18:12:45.666Z",
+        "updatedAt": "2023-02-21T18:12:45.666Z",
+        "categoria": "INFRAÇÕES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 10,
+      "attributes": {
+        "infracao": "Ameaça",
+        "multa": 1000,
+        "apreender_veiculo": false,
+        "descricao": "Ameaçar outra pessoa com palavras, gestos ou objetos\n\n",
+        "createdAt": "2023-02-28T06:21:34.464Z",
+        "updatedAt": "2023-02-28T06:21:34.464Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 11,
+      "attributes": {
+        "infracao": "Roubo",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Tomar para si posses de outras pessoas sob ameaça ou violência\n\n",
+        "createdAt": "2023-02-28T06:21:59.163Z",
+        "updatedAt": "2023-02-28T06:21:59.163Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 12,
+      "attributes": {
+        "infracao": "Roubo a Viatura",
+        "multa": 20000,
+        "apreender_veiculo": false,
+        "descricao": "Estar de posse de viatura sem ter a autorização necessária\n\n",
+        "createdAt": "2023-02-28T06:22:35.323Z",
+        "updatedAt": "2023-02-28T06:22:35.323Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 13,
+      "attributes": {
+        "infracao": "Associação Criminosa",
+        "multa": 1000,
+        "apreender_veiculo": false,
+        "descricao": "Associar-se com 3 ou mais pessoas para fins criminais\n\n",
+        "createdAt": "2023-02-28T06:24:58.178Z",
+        "updatedAt": "2023-02-28T06:24:58.178Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 14,
+      "attributes": {
+        "infracao": "Corrida ilegal",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Concorrer em corridas clandestinas",
+        "createdAt": "2023-02-28T06:25:21.719Z",
+        "updatedAt": "2023-02-28T06:25:21.719Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 15,
+      "attributes": {
+        "infracao": "Denúncia Caluniosa",
+        "multa": 1000,
+        "apreender_veiculo": false,
+        "descricao": "Comunicar um crime que não ocorreu, causando uma investigação criminal\n\n",
+        "createdAt": "2023-02-28T06:41:35.579Z",
+        "updatedAt": "2023-02-28T06:41:35.579Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 16,
+      "attributes": {
+        "infracao": "Desacato",
+        "multa": 4000,
+        "apreender_veiculo": false,
+        "descricao": "Faltar com respeito ao policial",
+        "createdAt": "2023-02-28T06:45:13.111Z",
+        "updatedAt": "2023-02-28T06:45:13.111Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 17,
+      "attributes": {
+        "infracao": "Desobediência",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Desobedecer uma ordem direta de um policia",
+        "createdAt": "2023-02-28T06:45:57.362Z",
+        "updatedAt": "2023-02-28T06:45:57.362Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 19,
+      "attributes": {
+        "infracao": "Estelionato",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Cometer o delito para obter vantagem ilícita para si ou outra pessoa, causar prejuízo a alguém e utilizar de artimanha induzindo a pessoa ao erro.",
+        "createdAt": "2023-02-28T06:51:20.281Z",
+        "updatedAt": "2023-02-28T06:51:20.281Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 18,
+      "attributes": {
+        "infracao": "Dinheiro Adulterado",
+        "multa": 1000,
+        "apreender_veiculo": false,
+        "descricao": "Posse de dinheiro de origem duvidosa.",
+        "createdAt": "2023-02-28T06:48:23.122Z",
+        "updatedAt": "2023-02-28T06:51:27.955Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 20,
+      "attributes": {
+        "infracao": "Falsidade Ideológica",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Tomar-se de uma identidade que não é sua para obter vantagens\n\n",
+        "createdAt": "2023-02-28T06:52:04.271Z",
+        "updatedAt": "2023-02-28T06:52:04.271Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 21,
+      "attributes": {
+        "infracao": "Falso Testemunho",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Fazer afirmações falsas, negar ou calar a verdade",
+        "createdAt": "2023-02-28T06:52:35.829Z",
+        "updatedAt": "2023-02-28T06:52:35.829Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 22,
+      "attributes": {
+        "infracao": "Furto",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Tomar para si posses de outras pessoas sem ameaça ou violência\n\n",
+        "createdAt": "2023-02-28T06:53:15.294Z",
+        "updatedAt": "2023-02-28T06:53:15.294Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 23,
+      "attributes": {
+        "infracao": "Tentativa de Homicídio",
+        "multa": 3000,
+        "apreender_veiculo": false,
+        "descricao": "Tentativa contra a vida de um cidadão.",
+        "createdAt": "2023-02-28T06:54:41.055Z",
+        "updatedAt": "2023-02-28T06:54:41.055Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 24,
+      "attributes": {
+        "infracao": "Tentativa de Homicídio a Policial",
+        "multa": 2000,
+        "apreender_veiculo": false,
+        "descricao": "Tentativa contra a vida de um policial\n\n",
+        "createdAt": "2023-02-28T06:55:07.335Z",
+        "updatedAt": "2023-02-28T06:55:07.335Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 25,
+      "attributes": {
+        "infracao": "Invasão de propriedade particular",
+        "multa": 1000,
+        "apreender_veiculo": false,
+        "descricao": "Invadir áreas privadas",
+        "createdAt": "2023-02-28T06:55:37.583Z",
+        "updatedAt": "2023-02-28T06:55:37.583Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 26,
+      "attributes": {
+        "infracao": "Invasão de propriedade pública",
+        "multa": 10000,
+        "apreender_veiculo": false,
+        "descricao": "Invadir áreas Públicas",
+        "createdAt": "2023-02-28T06:57:23.710Z",
+        "updatedAt": "2023-02-28T06:57:23.710Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 27,
+      "attributes": {
+        "infracao": "Lesão Corporal",
+        "multa": 1000,
+        "apreender_veiculo": false,
+        "descricao": "Ferir/ denegrir a integridade corporal de outra pessoa",
+        "createdAt": "2023-02-28T06:58:01.934Z",
+        "updatedAt": "2023-02-28T06:58:01.934Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 28,
+      "attributes": {
+        "infracao": "Obstrução de Justiça",
+        "multa": 3500,
+        "apreender_veiculo": false,
+        "descricao": "Ato de impedir ou embaraçar investigação penal que apura organização criminosa\n",
+        "createdAt": "2023-02-28T06:58:26.924Z",
+        "updatedAt": "2023-02-28T06:58:26.924Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 29,
+      "attributes": {
+        "infracao": "Posse ilegal de armas-Classe 1",
+        "multa": 1000,
+        "apreender_veiculo": false,
+        "descricao": "Ter em posse uma arma de baixo calibre sem a devida autorização",
+        "createdAt": "2023-02-28T06:59:17.187Z",
+        "updatedAt": "2023-02-28T07:00:28.913Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 37,
+      "attributes": {
+        "infracao": "Ameaça grave à vida",
+        "multa": 1000,
+        "apreender_veiculo": false,
+        "descricao": "Quantidade de reféns: 2-4",
+        "createdAt": "2023-02-28T07:12:34.737Z",
+        "updatedAt": "2023-02-28T07:12:34.737Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 38,
+      "attributes": {
+        "infracao": "Ameaça gravíssima a vida",
+        "multa": 1700,
+        "apreender_veiculo": false,
+        "descricao": "Quantidade de reféns: 5-8",
+        "createdAt": "2023-02-28T07:14:28.042Z",
+        "updatedAt": "2023-02-28T07:14:28.042Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 39,
+      "attributes": {
+        "infracao": "Ameaça Exótica (terrorismo)",
+        "multa": 3000,
+        "apreender_veiculo": false,
+        "descricao": "Situação em que mais de 8 pessoas estão com a vida em risco/sendo reféns\n\n",
+        "createdAt": "2023-02-28T07:14:58.745Z",
+        "updatedAt": "2023-02-28T07:14:58.745Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 40,
+      "attributes": {
+        "infracao": "Suborno",
+        "multa": 4000,
+        "apreender_veiculo": false,
+        "descricao": "Oferecer vantagens ou dinheiro ao policial em troca de benefícios próprios\n\n",
+        "createdAt": "2023-02-28T07:15:49.139Z",
+        "updatedAt": "2023-02-28T07:15:49.139Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 41,
+      "attributes": {
+        "infracao": "Tráfico de Drogas",
+        "multa": 1500,
+        "apreender_veiculo": false,
+        "descricao": "Posse de entorpecente. Limite permitido: 8g do produto (2,5g a unidade).\n\n",
+        "createdAt": "2023-02-28T07:20:52.035Z",
+        "updatedAt": "2023-02-28T07:21:24.576Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 43,
+      "attributes": {
+        "infracao": "Caça Ilegal",
+        "multa": 1500,
+        "apreender_veiculo": false,
+        "descricao": "Caçar sem o devido porte de caça ou utilizando armamento/veículo inadequado para tal\n\n",
+        "createdAt": "2023-02-28T07:22:26.862Z",
+        "updatedAt": "2023-02-28T07:22:26.862Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    },
+    {
+      "id": 44,
+      "attributes": {
+        "infracao": "Uso indevido da farda policial",
+        "multa": 8000,
+        "apreender_veiculo": false,
+        "descricao": "Utilizar fardamento policial de forma a obter vantagens ou em crimes",
+        "createdAt": "2023-02-28T07:23:03.899Z",
+        "updatedAt": "2023-02-28T07:23:03.899Z",
+        "categoria": "CRIMES",
+        "fianca": 0
+      }
+    }
+  ],
+  "meta": { "pagination": { "page": 1, "pageSize": 100 } }
+}

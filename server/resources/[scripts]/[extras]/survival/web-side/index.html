@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>👑 Drake Survival System</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="survivalScreen" class="survival-screen">
+		<div class="drake-quote">
+			<div class="quote-text">
+				<img src="https://emoji.discadia.com/emojis/1f542.png" alt="dove" class="emoji-icon"> NOTA DE FALECIMENTO – DRAKE <img src="https://emoji.discadia.com/emojis/1f542.png" alt="dove" class="emoji-icon"><br><br>
+				Hoje a cidade perde mais que um nome… perde uma história.<br>
+				Um verdadeiro Drake caiu, mas sua essência permanece nas ruas que ele dominou.<br><br>
+				Respeitado por muitos, temido por outros… sua trajetória nunca será esquecida.<br>
+				Quem viveu como Drake, jamais morre de verdade — vira lenda.<br><br>
+				Que fique marcado:<br>
+				Drake não morre, Drake vira história.
+			</div>
+		</div>
+		<div class="content-wrapper">
+			<div class="status-group">
+				<div class="status-indicator">
+					<div class="pulse-ring"></div>
+					<div class="pulse-ring"></div>
+					<div class="heart-icon" id="statusIcon">
+						<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.24264 8.24264L8 15L14.7574 8.24264C15.553 7.44699 16 6.36786 16 5.24264V5.05234C16 2.8143 14.1857 1 11.9477 1C10.7166 1 9.55233 1.55959 8.78331 2.52086L8 3.5L7.21669 2.52086C6.44767 1.55959 5.28338 1 4.05234 1C1.8143 1 0 2.8143 0 5.05234V5.24264C0 6.36786 0.44699 7.44699 1.24264 8.24264Z" fill="currentColor"/>
+						</svg>
+					</div>
+					<div class="heart-beat"></div>
+				</div>
+				
+				<div class="message-container">
+					<div id="deathText" class="message-text"></div>
+				</div>
+			</div>
+			
+			<div class="accent-line"></div>
+			<div class="drake-watermark"><img src="https://emoji.discadia.com/emojis/1f451.png" alt="crown" class="emoji-icon"> DRAKE</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

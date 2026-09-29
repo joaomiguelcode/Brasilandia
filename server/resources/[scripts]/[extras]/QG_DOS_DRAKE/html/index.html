@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="painel">
+        <div class="military-header">
+            <div class="emblem">
+                <img src="https://cdn.discordapp.com/attachments/1474913756399276153/1492947387071598733/content.png?ex=69dd2f1a&is=69dbdd9a&hm=6b559ae15e4dbfa49f9f9dc43b8cd02b213c2afb6d0e476ebc157d3b31c0d7fb&" alt="Logo">
+            </div>
+            <div class="title-section">
+                <h1 class="main-title">QUINTAL DOS QUENTÃO</h1>
+                <p class="subtitle">QG DOS DRAKE</p>
+            </div>
+        </div>
+        
+        <div class="progress-section">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress"></div>
+            </div>
+            <span class="question-counter" id="questionNumber">QUESTÃO 1/15</span>
+        </div>
+        
+        <div class="content">
+            <div class="question-container">
+                <h2 id="pergunta" class="question-text"></h2>
+            </div>
+            
+            <div class="answers-container" id="answersContainer">
+                <!-- Respostas serão geradas dinamicamente -->
+            </div>
+            
+            <div class="button-container">
+                <button onclick="proxima()" class="btn-proxima">Próxima Questão</button>
+            </div>
+        </div>
+        
+        <div class="beta-watermark">BETA</div>
+    </div>
+    
+    <div id="notificacao" class="notificacao">
+        <div class="notificacao-conteudo">
+            <h3 id="notificacao-titulo"></h3>
+            <p id="notificacao-mensagem"></p>
+            <button onclick="fecharNotificacao()">Fechar (5s)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
