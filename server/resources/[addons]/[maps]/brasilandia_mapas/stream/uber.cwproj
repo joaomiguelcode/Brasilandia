@@ -1,0 +1,25 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>slb2k11_boatshop_milo_.ymap</Item>
+    <Item>lr_sc1_rd_strm_5.ymap</Item>
+    <Item>portao_grade.ymap</Item>
+    <Item>lr_sc1_00c_strm_0.ymap</Item>
+    <Item>lr_sc1_00c_long_0.ymap</Item>
+    <Item>lr_sc1_rd_critical_1.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>slb2k11_boatshop.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames />
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames />
+</CodeWalkerProject>

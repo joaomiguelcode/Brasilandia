@@ -1,0 +1,52 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>stream\alphamods_receita.ymap</Item>
+    <Item>stream\coelho_placa_praca.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>stream\coelho_placa_praca.ytyp</Item>
+    <Item>stream\props\and_addprops.ytyp</Item>
+    <Item>stream\props\and_bpm_props.ytyp</Item>
+    <Item>stream\props\and_bpm_props2.ytyp</Item>
+    <Item>stream\props\iau_prop.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames>
+    <Item>stream\coelho_placa_praca.ydr</Item>
+    <Item>stream\props\and_armarinho_1.ydr</Item>
+    <Item>stream\props\and_bebedouro.ydr</Item>
+    <Item>stream\props\and_cadeiraescritorio1.ydr</Item>
+    <Item>stream\props\and_cadeiralonga_2.ydr</Item>
+    <Item>stream\props\and_cadeirarep1.ydr</Item>
+    <Item>stream\props\and_copolapis2.ydr</Item>
+    <Item>stream\props\and_copos.ydr</Item>
+    <Item>stream\props\and_decal_cadeirante.ydr</Item>
+    <Item>stream\props\and_decal_idoso.ydr</Item>
+    <Item>stream\props\and_glocksuporte.ydr</Item>
+    <Item>stream\props\and_lixocopo.ydr</Item>
+    <Item>stream\props\and_lixoredondo.ydr</Item>
+    <Item>stream\props\and_placa_cadeirante.ydr</Item>
+    <Item>stream\props\and_placa_idoso.ydr</Item>
+    <Item>stream\props\and_prop_arcondicionado_m.ydr</Item>
+    <Item>stream\props\and_prop_lixeira_m.ydr</Item>
+    <Item>stream\props\and_prop_placa_bpm2.ydr</Item>
+    <Item>stream\props\and_prop_tomada_m.ydr</Item>
+    <Item>stream\props\and_revisteiro.ydr</Item>
+    <Item>stream\props\as_prop_as_laptop_01a.ydr</Item>
+    <Item>stream\props\iau_prop.ydr</Item>
+    <Item>stream\props\rfb_map.ydr</Item>
+    <Item>stream\props\v_res_mousemat.ydr</Item>
+  </YdrFilenames>
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames>
+    <Item>stream\props\and_bpmprops.ytd</Item>
+  </YtdFilenames>
+</CodeWalkerProject>

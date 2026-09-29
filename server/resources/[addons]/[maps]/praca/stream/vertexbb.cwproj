@@ -1,0 +1,59 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>alphamods_receita.ymap</Item>
+    <Item>lombadinha.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>canteirosampa.ytyp</Item>
+    <Item>lombadinha.ytyp</Item>
+    <Item>radarsampa.ytyp</Item>
+    <Item>props\and_addprops.ytyp</Item>
+    <Item>props\and_bpm_props.ytyp</Item>
+    <Item>props\and_bpm_props2.ytyp</Item>
+    <Item>props\iau_prop.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames>
+    <Item>alpha_canteirosampa.ydr</Item>
+    <Item>alpha_radarsampa.ydr</Item>
+    <Item>alpha_radarsampa2.ydr</Item>
+    <Item>lombadinha.ydr</Item>
+    <Item>props\and_armarinho_1.ydr</Item>
+    <Item>props\and_bebedouro.ydr</Item>
+    <Item>props\and_cadeiraescritorio1.ydr</Item>
+    <Item>props\and_cadeiralonga_2.ydr</Item>
+    <Item>props\and_cadeirarep1.ydr</Item>
+    <Item>props\and_copolapis2.ydr</Item>
+    <Item>props\and_copos.ydr</Item>
+    <Item>props\and_decal_cadeirante.ydr</Item>
+    <Item>props\and_decal_idoso.ydr</Item>
+    <Item>props\and_glocksuporte.ydr</Item>
+    <Item>props\and_lixocopo.ydr</Item>
+    <Item>props\and_lixoredondo.ydr</Item>
+    <Item>props\and_placa_cadeirante.ydr</Item>
+    <Item>props\and_placa_idoso.ydr</Item>
+    <Item>props\and_prop_arcondicionado_m.ydr</Item>
+    <Item>props\and_prop_lixeira_m.ydr</Item>
+    <Item>props\and_prop_placa_bpm2.ydr</Item>
+    <Item>props\and_prop_tomada_m.ydr</Item>
+    <Item>props\and_revisteiro.ydr</Item>
+    <Item>props\as_prop_as_laptop_01a.ydr</Item>
+    <Item>props\iau_prop.ydr</Item>
+    <Item>props\rfb_map.ydr</Item>
+    <Item>props\v_res_mousemat.ydr</Item>
+  </YdrFilenames>
+  <YddFilenames />
+  <YftFilenames>
+    <Item>placa_lombada.yft</Item>
+  </YftFilenames>
+  <YtdFilenames>
+    <Item>props\and_bpmprops.ytd</Item>
+  </YtdFilenames>
+</CodeWalkerProject>

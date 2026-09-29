@@ -1,0 +1,114 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>..\praca\stream\alphamods_receita.ymap</Item>
+    <Item>..\praca\stream\coelho_placa_praca.ymap</Item>
+    <Item>stream\coelho_cerca.ymap</Item>
+    <Item>stream\coelho_cerca2.ymap</Item>
+    <Item>stream\coelho_placa_praca.ymap</Item>
+    <Item>stream\dt1_13.ymap</Item>
+    <Item>stream\dt1_13_strm_0.ymap</Item>
+    <Item>stream\hei_dt1_13_long_0.ymap</Item>
+    <Item>stream\hei_dt1_13_strm_0.ymap</Item>
+    <Item>stream\hei_dt1_occl_04.ymap</Item>
+    <Item>stream\hei_dt1_rd1_critical_1.ymap</Item>
+    <Item>stream\hei_dt1_rd1_long_1.ymap</Item>
+    <Item>stream\vdg_spacesquaretree.ymap</Item>
+    <Item>stream\vdg_spacesquarev2.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>..\praca\stream\coelho_placa_praca.ytyp</Item>
+    <Item>..\praca\stream\props\and_addprops.ytyp</Item>
+    <Item>..\praca\stream\props\and_bpm_props.ytyp</Item>
+    <Item>..\praca\stream\props\and_bpm_props2.ytyp</Item>
+    <Item>..\praca\stream\props\iau_prop.ytyp</Item>
+    <Item>stream\coelho_cerca.ytyp</Item>
+    <Item>stream\coelho_placa_praca.ytyp</Item>
+    <Item>stream\vdg_decspacesquare.ytyp</Item>
+    <Item>stream\vdg_highsquare.ytyp</Item>
+    <Item>stream\vdg_spacesquare.ytyp</Item>
+    <Item>stream\vdg_spacesquaresofa.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames>
+    <Item>stream\changer_x_antivdm.ybn</Item>
+    <Item>stream\dt1_13_0.ybn</Item>
+    <Item>stream\dt1_rd1_3.ybn</Item>
+    <Item>stream\dt1_rd1_4.ybn</Item>
+    <Item>stream\hi@dt1_13_0.ybn</Item>
+    <Item>stream\hi@dt1_rd1_9.ybn</Item>
+    <Item>stream\vdg_spacesquarelago_col.ybn</Item>
+    <Item>stream\vdg_spacesquare_col.ybn</Item>
+    <Item>stream\vdg_spacesquare_walk_col.ybn</Item>
+    <Item>stream\vdg_waterpacesquare_col.ybn</Item>
+  </YbnFilenames>
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames>
+    <Item>..\praca\stream\coelho_placa_praca.ydr</Item>
+    <Item>..\praca\stream\props\and_armarinho_1.ydr</Item>
+    <Item>..\praca\stream\props\and_bebedouro.ydr</Item>
+    <Item>..\praca\stream\props\and_cadeiraescritorio1.ydr</Item>
+    <Item>..\praca\stream\props\and_cadeiralonga_2.ydr</Item>
+    <Item>..\praca\stream\props\and_cadeirarep1.ydr</Item>
+    <Item>..\praca\stream\props\and_copolapis2.ydr</Item>
+    <Item>..\praca\stream\props\and_copos.ydr</Item>
+    <Item>..\praca\stream\props\and_decal_cadeirante.ydr</Item>
+    <Item>..\praca\stream\props\and_decal_idoso.ydr</Item>
+    <Item>..\praca\stream\props\and_glocksuporte.ydr</Item>
+    <Item>..\praca\stream\props\and_lixocopo.ydr</Item>
+    <Item>..\praca\stream\props\and_lixoredondo.ydr</Item>
+    <Item>..\praca\stream\props\and_placa_cadeirante.ydr</Item>
+    <Item>..\praca\stream\props\and_placa_idoso.ydr</Item>
+    <Item>..\praca\stream\props\and_prop_arcondicionado_m.ydr</Item>
+    <Item>..\praca\stream\props\and_prop_lixeira_m.ydr</Item>
+    <Item>..\praca\stream\props\and_prop_placa_bpm2.ydr</Item>
+    <Item>..\praca\stream\props\and_prop_tomada_m.ydr</Item>
+    <Item>..\praca\stream\props\and_revisteiro.ydr</Item>
+    <Item>..\praca\stream\props\as_prop_as_laptop_01a.ydr</Item>
+    <Item>..\praca\stream\props\iau_prop.ydr</Item>
+    <Item>..\praca\stream\props\rfb_map.ydr</Item>
+    <Item>..\praca\stream\props\v_res_mousemat.ydr</Item>
+    <Item>stream\coelho_cerca_01.ydr</Item>
+    <Item>stream\coelho_cerca_02.ydr</Item>
+    <Item>stream\coelho_placa_praca.ydr</Item>
+    <Item>stream\dt1_13_build1.ydr</Item>
+    <Item>stream\dt1_13_build2.ydr</Item>
+    <Item>stream\dt1_rd1_r1_09.ydr</Item>
+    <Item>stream\dt1_rd1_r1_10.ydr</Item>
+    <Item>stream\dt1_rd1_r1_26.ydr</Item>
+    <Item>stream\dt1_rd1_r1_27.ydr</Item>
+    <Item>stream\dt1_rd1_r1_28.ydr</Item>
+    <Item>stream\dt1_rd1_r1_ovly_15.ydr</Item>
+    <Item>stream\dt1_rd1_r1_ovly_16.ydr</Item>
+    <Item>stream\dt1_rd1_r1_ovly_38.ydr</Item>
+    <Item>stream\dt1_rd1_r1_ovly_45.ydr</Item>
+    <Item>stream\nt_letreiro_nexus_square.ydr</Item>
+    <Item>stream\vdg_bubble_chair.ydr</Item>
+    <Item>stream\vdg_cobertoldo.ydr</Item>
+    <Item>stream\vdg_decksofa.ydr</Item>
+    <Item>stream\vdg_deckspacesquare.ydr</Item>
+    <Item>stream\vdg_estrtoldo.ydr</Item>
+    <Item>stream\vdg_firepit.ydr</Item>
+    <Item>stream\vdg_preguic.ydr</Item>
+    <Item>stream\vdg_sofacama01.ydr</Item>
+    <Item>stream\vdg_spacesquare.ydr</Item>
+    <Item>stream\vdg_spacesquarelago.ydr</Item>
+    <Item>stream\vdg_spacesquaresofa.ydr</Item>
+    <Item>stream\vdg_spacesquare_walk.ydr</Item>
+    <Item>stream\vdg_square_bridge.ydr</Item>
+    <Item>stream\vdg_waterpacesquare.ydr</Item>
+    <Item>stream\vdg_wooden_bench.ydr</Item>
+  </YdrFilenames>
+  <YddFilenames>
+    <Item>stream\dt1_13_superlod_children.ydd</Item>
+  </YddFilenames>
+  <YftFilenames />
+  <YtdFilenames>
+    <Item>..\praca\stream\props\and_bpmprops.ytd</Item>
+    <Item>stream\vdg_highsquare.ytd</Item>
+  </YtdFilenames>
+</CodeWalkerProject>

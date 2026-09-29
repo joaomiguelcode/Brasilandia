@@ -1,0 +1,28 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>arlison_bb.ymap</Item>
+    <Item>hei_cs1_04_strm_0.ymap</Item>
+    <Item>hei_cs1_04_strm_1.ymap</Item>
+    <Item>hei_dt1_23_strm_0.ymap</Item>
+    <Item>[bancocentral]\hei_hw1_rd_strm_4.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>hei_dlc_generic_bank.ytyp</Item>
+    <Item>painel_arlison2.ytyp</Item>
+    <Item>poltrona_bb.ytyp</Item>
+    <Item>sofa_bb.ytyp</Item>
+    <Item>v_int_10.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames />
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames />
+</CodeWalkerProject>
