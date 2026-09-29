@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVehicleModelInfoVariation>
+	<variationData>
+
+		<Item>
+			<modelName>as350rfb</modelName>
+			<colors>
+				<Item>
+					<indices content="char_array">12 12 156 0 156 156</indices>
+					<liveries />
+				</Item>
+			</colors>
+			<kits>
+				<Item>0_default_modkit</Item>
+			</kits>
+			<windowsWithExposedEdges />
+			<plateProbabilities>
+				<Probabilities>
+					<Item>
+						<Name>Standard White</Name>
+						<Value value="100" />
+					</Item>
+				</Probabilities>
+			</plateProbabilities>
+			<lightSettings value="0" />
+			<sirenSettings value="0" />
+		</Item>
+
+		<Item>
+			<modelName>WRbell407prf</modelName>
+			<colors>
+				<Item>
+					<indices content="char_array">12 12 156 0 156 156</indices>
+					<liveries />
+				</Item>
+			</colors>
+			<kits>
+				<Item>0_default_modkit</Item>
+			</kits>
+			<windowsWithExposedEdges />
+			<plateProbabilities>
+				<Probabilities>
+					<Item>
+						<Name>Standard White</Name>
+						<Value value="100" />
+					</Item>
+				</Probabilities>
+			</plateProbabilities>
+			<lightSettings value="0" />
+			<sirenSettings value="0" />
+		</Item>
+
+
+	</variationData>
+</CVehicleModelInfoVariation>

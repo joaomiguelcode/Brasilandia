@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fwClipSetManager>
+  <clipSets>
+    <Item type="fwClipSet" key="veh@driveby@ruta@terceiro_right_ps_2h">
+      <fallbackId />
+      <clipDictionaryName>veh@driveby@ruta@terceiro_right_ps_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@driveby@ruta@carona_right_ps_2h">
+      <fallbackId />
+      <clipDictionaryName>veh@driveby@ruta@carona_right_ps_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@driveby@ruta@quarto_left_ds_2h">
+      <fallbackId />
+      <clipDictionaryName>veh@driveby@ruta@quarto_left_ds_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+	
+	
+    <Item type="fwClipSet" key="veh@as350@ruta@rps_04@base">
+      <fallbackId />
+      <clipDictionaryName>veh@as350@ruta@rps_04@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@drivebyheli@ruta_04@rear_ps_2h">
+      <fallbackId />
+      <clipDictionaryName>veh@drivebyheli@ruta_04@rear_ps_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+    <Item type="fwClipSet" key="veh@as350@ruta@rps_03@base">
+      <fallbackId />
+      <clipDictionaryName>veh@as350@ruta@rps_03@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@drivebyheli@ruta_03@rear_ds_2h">
+      <fallbackId />
+      <clipDictionaryName>veh@drivebyheli@ruta_03@rear_ds_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+    <Item type="fwClipSet" key="veh@as350@ruta@rds_02@base">
+      <fallbackId />
+      <clipDictionaryName>veh@as350@ruta@rds_02@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@drivebyheli@ruta_02@rear_ds_2h">
+      <fallbackId />
+      <clipDictionaryName>veh@drivebyheli@ruta_02@rear_ds_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+    <Item type="fwClipSet" key="veh@as350@ruta@rds_01@base">
+      <fallbackId />
+      <clipDictionaryName>veh@as350@ruta@rds_01@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@drivebyheli@ruta_01@rear_ds_2h">
+      <fallbackId />
+      <clipDictionaryName>veh@drivebyheli@ruta_01@rear_ds_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+	
+	
+    <Item type="fwClipSet" key="veh@bike@ruta@rear@base">
+      <fallbackId />
+      <clipDictionaryName>veh@bike@ruta@rear@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@veh@drivebytiger@ruta@moto_rb_2h">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebytiger@ruta@moto_rb_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+	
+	
+    <Item type="fwClipSet" key="veh@ruta@deitado@base">
+      <fallbackId />
+      <clipDictionaryName>veh@ruta@deitado@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+	
+	
+    <Item type="fwClipSet" key="veh@gaiola@ruta@rps_01@base">
+      <fallbackId />
+      <clipDictionaryName>veh@gaiola@ruta@rps_01@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@gaiola2@ruta@rps_01@base">
+      <fallbackId />
+      <clipDictionaryName>veh@gaiola2@ruta@rps_01@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@gaiola3@ruta@rps_01@base">
+      <fallbackId />
+      <clipDictionaryName>veh@gaiola3@ruta@rps_01@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@veh@drivebygaiola@ruta@rb_2h">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebygaiola@ruta@rb_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@veh@drivebygaiola2@ruta@rb_2h">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebygaiola2@ruta@rb_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@veh@drivebygaiola3@ruta@rb_2h">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebygaiola3@ruta@rb_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@duck_sentado_gaiola">
+      <fallbackId />
+      <clipDictionaryName>anim@duck_sentado_gaiola</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@duck_sentado_gaiola2">
+      <fallbackId />
+      <clipDictionaryName>anim@duck_sentado_gaiola2</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@duck_sentado_gaiola3">
+      <fallbackId />
+      <clipDictionaryName>anim@duck_sentado_gaiola3</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@sentado_gaiola@ruta@rps@base">
+      <fallbackId />
+      <clipDictionaryName>veh@sentado_gaiola@ruta@rps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@sentado_gaiola2@ruta@rps@base">
+      <fallbackId />
+      <clipDictionaryName>veh@sentado_gaiola2@ruta@rps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@sentado_gaiola3@ruta@rps@base">
+      <fallbackId />
+      <clipDictionaryName>veh@sentado_gaiola3@ruta@rps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@veh@drivebysentado@ruta@rb_2h">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebysentado@ruta@rb_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@veh@drivebysentado2@ruta@rb_2h">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebysentado2@ruta@rb_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@sentado_com_mala@ruta@rps@base">
+      <fallbackId />
+      <clipDictionaryName>veh@sentado_com_mala@ruta@rps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@veh@drivebycom_mala@ruta@rb_2h">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebycom_mala@ruta@rb_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+	
+	
+    <Item type="fwClipSet" key="veh@huey@ruta@rds_01@base">
+      <fallbackId />
+      <clipDictionaryName>veh@huey@ruta@rds_01@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@huey@ruta@rds_02@base">
+      <fallbackId />
+      <clipDictionaryName>veh@huey@ruta@rds_02@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@huey@ruta@rds_03@base">
+      <fallbackId />
+      <clipDictionaryName>veh@huey@ruta@rds_03@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="veh@huey@ruta@rps_04@base">
+      <fallbackId />
+      <clipDictionaryName>veh@huey@ruta@rps_04@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="anim@veh@drivebyhuey@ruta@rb_2h">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebyhuey@ruta@rb_2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+  </clipSets>
+  <clipDictionaryMetadatas>
+	<Item key="veh@driveby@ruta@terceiro_right_ps_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@driveby@ruta@carona_right_ps_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@driveby@ruta@quarto_left_ds_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@driveby@ruta@quarto_left_ds_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	
+	
+	
+	<Item key="veh@as350@ruta@rps_04@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@drivebyheli@ruta_04@rear_ps_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	
+	<Item key="veh@as350@ruta@rps_03@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@drivebyheli@ruta_03@rear_ds_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	
+	<Item key="veh@as350@ruta@rds_02@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@drivebyheli@ruta_02@rear_ds_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	
+	<Item key="veh@as350@ruta@rds_01@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@drivebyheli@ruta_01@rear_ds_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	
+	
+	
+	<Item key="veh@bike@ruta@rear@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@drivebytiger@ruta@moto_rb_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	
+	
+	
+	<Item key="veh@ruta@deitado@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	
+	
+	
+	<Item key="veh@gaiola@ruta@rps_01@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@gaiola2@ruta@rps_01@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@gaiola3@ruta@rps_01@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@drivebygaiola@ruta@rb_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@drivebygaiola2@ruta@rb_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@drivebygaiola3@ruta@rb_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@duck_sentado_gaiola">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@duck_sentado_gaiola2">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@duck_sentado_gaiola3">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@sentado_gaiola@ruta@rps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@sentado_gaiola2@ruta@rps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@sentado_gaiola3@ruta@rps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@drivebysentado@ruta@rb_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@drivebysentado2@ruta@rb_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@sentado_com_mala@ruta@rps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@drivebycom_mala@ruta@rb_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	
+	
+	
+	<Item key="veh@huey@ruta@rds_01@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@huey@ruta@rds_02@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@huey@ruta@rds_03@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="veh@huey@ruta@rps_04@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@drivebyhuey@ruta@rb_2h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	</clipDictionaryMetadatas>
+</fwClipSetManager>
+
+
+
+
+
+
+
+
